@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeatWear Solutions | Industrial Laundry Services</title>
+<meta name="description" content="NeatWear Solutions Private Limited provides industrial laundry and garment management services for pharmaceutical, food and hygiene-sensitive industries in Maharashtra, India.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.neatwear.co.in/">
+
+<!-- OpenGraph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NeatWear Solutions Private Limited">
+<meta property="og:title" content="NeatWear Solutions | Industrial Laundry Services">
+<meta property="og:description" content="Industrial laundry and garment management solutions for pharmaceutical, food and hygiene-sensitive industries.">
+<meta property="og:image" content="/images/og-neatware.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Organization schema. Contact fields intentionally left as placeholders until verified. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NeatWear Solutions Private Limited",
+  "description": "Industrial laundry and garment management solutions for pharmaceutical, food and hygiene-sensitive industries.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ajnu, Tal. Khandala, Dist. Satara",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   NEATWEAR DESIGN SYSTEM
+   ============================================================ */
+:root{
+  --navy:#0B1F33;
+  --navy-800:#122b45;
+  --blue:#1261A0;
+  --blue-600:#0f5288;
+  --teal:#16A6A0;
+  --teal-600:#118e89;
+  /* Brand accent taken from the live NeatWear identity.
+     To revert to the teal-led scheme, set --accent to var(--teal). */
+  --accent:#D0402F;
+  --accent-600:#B23425;
+  --accent-soft:#FBEDEB;
+  --green:#45B97C;
+  --bg:#F5F8FA;
+  --white:#FFFFFF;
+  --ink:#17212B;
+  --muted:#667085;
+  --line:#E4EBF1;
+  --line-soft:#EEF3F7;
+
+  --radius-sm:12px;
+  --radius:16px;
+  --radius-lg:20px;
+
+  --shadow-sm:0 1px 2px rgba(11,31,51,.05), 0 2px 8px rgba(11,31,51,.04);
+  --shadow:0 4px 14px rgba(11,31,51,.07), 0 1px 3px rgba(11,31,51,.05);
+  --shadow-lg:0 18px 40px rgba(11,31,51,.12);
+
+  --nav-h:74px;
+  --maxw:1200px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:'Manrope','Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--white);
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-decoration:none}
+button{font-family:inherit}
+
+h1,h2,h3,h4{color:var(--navy);margin:0 0 .5em;line-height:1.14;letter-spacing:-.02em;font-weight:800}
+h1{font-size:clamp(36px,5.2vw,62px);letter-spacing:-.03em}
+h2{font-size:clamp(30px,3.6vw,46px)}
+h3{font-size:clamp(21px,2vw,27px);font-weight:700;letter-spacing:-.015em}
+h4{font-size:19px;font-weight:700}
+p{margin:0 0 1.1em}
+.lead{font-size:clamp(17px,1.35vw,19px);color:var(--muted);line-height:1.7;max-width:62ch}
+.muted{color:var(--muted)}
+
+/* Accessibility ------------------------------------------------ */
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:12px 18px;z-index:999;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Layout ------------------------------------------------------- */
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.section{padding:clamp(64px,7vw,104px) 0}
+.section--tight{padding:clamp(48px,5vw,72px) 0}
+.section--alt{background:var(--bg)}
+.section--navy{background:var(--navy);color:#C9D8E4}
+.section--navy h2,.section--navy h3,.section--navy h4{color:#fff}
+.section--navy p{color:#A9BFD1}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
+.section--navy .eyebrow{color:#F0705F}
+.section--navy .eyebrow::before{background:#F0705F}
+
+.head{max-width:760px;margin-bottom:clamp(34px,4vw,54px)}
+.head--center{margin-left:auto;margin-right:auto;text-align:center}
+.head--center .eyebrow{justify-content:center}
+
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
+
+/* Buttons ------------------------------------------------------ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 26px;border-radius:12px;font-weight:700;font-size:15.5px;
+  letter-spacing:-.01em;border:1px solid transparent;cursor:pointer;
+  transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .2s, color .2s, border-color .2s;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 6px 18px rgba(18,97,160,.24)}
+.btn-primary:hover{background:var(--blue-600);box-shadow:0 10px 26px rgba(18,97,160,.32)}
+.btn-teal{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(208,64,47,.28)}
+.btn-teal:hover{background:var(--accent-600);color:#fff;box-shadow:0 10px 28px rgba(208,64,47,.4)}
+.btn-ghost{background:transparent;color:var(--navy);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);background:#fff}
+.btn-onDark{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.22);backdrop-filter:blur(8px)}
+.btn-onDark:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4)}
+.btn-lg{padding:16px 32px;font-size:16.5px}
+.btn .ar{transition:transform .25s var(--ease)}
+.btn:hover .ar{transform:translateX(3px)}
+.btnrow{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+
+/* Navbar ------------------------------------------------------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;height:var(--nav-h);
+  display:flex;align-items:center;
+  transition:background .35s var(--ease), box-shadow .35s var(--ease), border-color .35s;
+  border-bottom:1px solid transparent;
+}
+.nav.is-solid{background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom-color:var(--line);box-shadow:0 2px 18px rgba(11,31,51,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+.brand-mark{
+  width:40px;height:40px;border-radius:8px;flex:none;
+  background:var(--accent);
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:20px;letter-spacing:-.04em;
+  box-shadow:0 4px 12px rgba(208,64,47,.3);
+}
+.brand-txt{display:flex;flex-direction:column;line-height:1.05}
+.brand-name{font-weight:800;font-size:19.5px;letter-spacing:-.01em;color:#fff;transition:color .3s}
+.brand-sub{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.66);transition:color .3s}
+.nav.is-solid .brand-name{color:var(--navy)}
+.nav.is-solid .brand-sub{color:var(--muted)}
+
+.navlinks{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.navlinks a{
+  padding:9px 13px;border-radius:9px;font-size:14.7px;font-weight:600;color:rgba(255,255,255,.86);
+  transition:color .2s,background .2s;
+}
+.navlinks a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.navlinks a.active{color:#fff;background:rgba(255,255,255,.14)}
+.nav.is-solid .navlinks a{color:#3d5165}
+.nav.is-solid .navlinks a:hover{color:var(--blue);background:var(--bg)}
+.nav.is-solid .navlinks a.active{color:var(--blue);background:#E8F1F8}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{
+  display:none;width:44px;height:44px;border-radius:10px;border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.08);cursor:pointer;padding:0;place-items:center;
+}
+.nav.is-solid .burger{border-color:var(--line);background:#fff}
+.burger span{display:block;width:19px;height:2px;background:#fff;border-radius:2px;position:relative;transition:.3s var(--ease)}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:19px;height:2px;background:#fff;border-radius:2px;transition:.3s var(--ease)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.nav.is-solid .burger span,.nav.is-solid .burger span::before,.nav.is-solid .burger span::after{background:var(--navy)}
+.burger.open span{background:transparent}
+.burger.open span::before{top:0;transform:rotate(45deg)}
+.burger.open span::after{top:0;transform:rotate(-45deg)}
+
+.drawer{
+  position:fixed;inset:var(--nav-h) 0 0;background:var(--white);z-index:190;
+  transform:translateY(-8px);opacity:0;pointer-events:none;transition:.28s var(--ease);
+  overflow-y:auto;padding:24px 0 48px;
+}
+.drawer.open{transform:none;opacity:1;pointer-events:auto}
+.drawer ul{list-style:none;margin:0 0 22px;padding:0}
+.drawer a{display:block;padding:15px 4px;font-size:18px;font-weight:700;color:var(--navy);border-bottom:1px solid var(--line-soft)}
+.drawer a.active{color:var(--blue)}
+
+/* Hero --------------------------------------------------------- */
+.hero{position:relative;min-height:clamp(600px,92vh,880px);display:flex;align-items:center;background:var(--navy);overflow:hidden;padding:calc(var(--nav-h) + 40px) 0 60px}
+#scene{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-fallback{position:absolute;inset:0;display:none;background:
+  radial-gradient(ellipse 70% 55% at 78% 34%, rgba(22,166,160,.3), transparent 62%),
+  radial-gradient(ellipse 60% 50% at 18% 78%, rgba(18,97,160,.36), transparent 62%),
+  linear-gradient(165deg,#0B1F33,#0d2a44 55%,#0B1F33);
+}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,31,51,.94) 0%,rgba(11,31,51,.82) 38%,rgba(11,31,51,.35) 66%,rgba(11,31,51,.55) 100%);pointer-events:none}
+.hero .wrap{position:relative;z-index:3}
+.hero-inner{max-width:660px}
+.hero h1{color:#fff;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:#B4C8D8;font-size:clamp(16.5px,1.35vw,19px);max-width:54ch;line-height:1.7}
+.badge{
+  display:inline-flex;align-items:center;gap:12px;padding:9px 16px;border-radius:99px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);
+  font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#CFE1EE;margin-bottom:26px;
+}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(208,64,47,.22);animation:pulse 2.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(208,64,47,0)}}
+.hero-scroll{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45);font-weight:600;
+}
+.hero-scroll .bar{width:1px;height:34px;background:linear-gradient(rgba(255,255,255,.05),var(--accent))}
+.hero-stage{
+  position:absolute;right:32px;bottom:32px;z-index:3;display:flex;gap:7px;align-items:center;
+  font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);
+}
+.hero-stage b{color:#F0705F;font-weight:700}
+
+/* Inner page hero ---------------------------------------------- */
+.phero{
+  position:relative;background:var(--navy);color:#fff;overflow:hidden;
+  padding:calc(var(--nav-h) + clamp(56px,6vw,86px)) 0 clamp(50px,6vw,80px);
+}
+.phero::before{
+  content:"";position:absolute;inset:0;opacity:.5;
+  background:
+    radial-gradient(ellipse 46% 70% at 88% 12%, rgba(22,166,160,.3), transparent 60%),
+    radial-gradient(ellipse 44% 60% at 6% 100%, rgba(18,97,160,.42), transparent 62%);
+}
+.phero::after{
+  content:"";position:absolute;inset:0;opacity:.14;
+  background-image:linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(ellipse 60% 80% at 70% 30%,#000,transparent 72%);
+  mask-image:radial-gradient(ellipse 60% 80% at 70% 30%,#000,transparent 72%);
+}
+.phero .wrap{position:relative;z-index:2}
+.phero h1{color:#fff;max-width:16ch}
+.phero p{color:#A9C1D4;max-width:60ch;font-size:clamp(16.5px,1.3vw,18.5px);margin-bottom:0}
+.crumb{display:flex;gap:9px;align-items:center;font-size:13px;color:#7E9BB3;margin-bottom:20px;font-weight:600}
+.crumb a{color:#7E9BB3}
+.crumb a:hover{color:var(--teal)}
+
+/* Cards -------------------------------------------------------- */
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px;box-shadow:var(--shadow-sm);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s;
+  position:relative;
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#CFE0EC}
+.card h3{margin-bottom:10px}
+.card p{color:var(--muted);font-size:15.6px;margin-bottom:0;line-height:1.65}
+a.card{display:block;color:inherit}
+.card-link{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-size:14.5px;font-weight:700;color:var(--blue)}
+.card:hover .card-link .ar{transform:translateX(4px)}
+.card-link .ar{transition:transform .25s var(--ease)}
+.ico{
+  width:48px;height:48px;border-radius:13px;display:grid;place-items:center;margin-bottom:18px;
+  background:#EAF3FA;color:var(--blue);flex:none;
+  transition:background .3s,color .3s;
+}
+.card:hover .ico{background:var(--blue);color:#fff}
+.ico svg{width:23px;height:23px;stroke-width:1.7}
+.ico--teal{background:#E2F6F5;color:var(--teal-600)}
+.card:hover .ico--teal{background:var(--teal);color:#fff}
+
+.tile{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow-sm)}
+.tile h4{margin-bottom:8px}
+.tile p{color:var(--muted);font-size:15.3px;margin:0}
+
+/* Pillar / numbered list --------------------------------------- */
+.pillar{display:flex;gap:18px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.pillar:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.pillar .n{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.06em;flex:none;padding-top:3px;min-width:26px}
+.pillar h4{margin-bottom:6px}
+.pillar p{margin:0;color:var(--muted);font-size:15.3px}
+
+/* Checklist ---------------------------------------------------- */
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:#33465a}
+.checks svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--teal)}
+.checks--2{grid-template-columns:repeat(2,1fr)}
+.section--navy .checks li{color:#B9CDDC}
+
+/* Process timeline --------------------------------------------- */
+.flow{position:relative;display:grid;gap:0}
+.flow::before{content:"";position:absolute;left:27px;top:14px;bottom:14px;width:2px;background:var(--line)}
+.flow-fill{position:absolute;left:27px;top:14px;width:2px;background:linear-gradient(var(--blue),var(--teal));height:0;transition:height .6s var(--ease)}
+.step{position:relative;display:grid;grid-template-columns:56px 1fr;gap:20px;padding:15px 0;align-items:start}
+.step .dot{
+  width:56px;height:56px;border-radius:15px;background:#fff;border:1px solid var(--line);
+  display:grid;place-items:center;font-weight:800;font-size:14px;color:var(--muted);z-index:2;
+  transition:.4s var(--ease);box-shadow:var(--shadow-sm);
+}
+.step.on .dot{background:var(--navy);border-color:var(--navy);color:#fff;transform:scale(1.04)}
+.step h4{margin-bottom:4px;transition:color .3s}
+.step p{margin:0;color:var(--muted);font-size:15.4px;max-width:60ch}
+.step .stepnum{font-size:11.5px;font-weight:800;letter-spacing:.14em;color:var(--accent);display:block;margin-bottom:3px}
+
+/* Horizontal chip flow ----------------------------------------- */
+.chips{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:0;margin:0;list-style:none}
+.chip{
+  display:inline-flex;align-items:center;gap:9px;padding:11px 17px;border-radius:11px;
+  background:#fff;border:1px solid var(--line);font-weight:700;font-size:14.5px;color:var(--navy);
+  box-shadow:var(--shadow-sm);transition:.25s var(--ease);
+}
+.chip:hover{border-color:var(--teal);color:var(--teal-600);transform:translateY(-3px)}
+.chip b{font-size:11.5px;color:var(--teal);font-weight:800;letter-spacing:.08em}
+.chip-arrow{color:#B9C7D3;flex:none}
+.section--navy .chip{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#fff}
+.section--navy .chip:hover{background:rgba(22,166,160,.16);border-color:var(--teal);color:#fff}
+
+/* Media placeholder blocks ------------------------------------- */
+.ph{
+  position:relative;border-radius:var(--radius);overflow:hidden;background:
+    linear-gradient(150deg,#12314e,#0B1F33 60%);
+  border:1px solid rgba(255,255,255,.08);min-height:230px;display:flex;align-items:flex-end;
+}
+.ph::before{
+  content:"";position:absolute;inset:0;opacity:.28;
+  background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.14) 0 1px,transparent 1px 22px);
+}
+.ph::after{
+  content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-70px;top:-90px;
+  background:radial-gradient(circle,rgba(22,166,160,.45),transparent 68%);
+}
+.ph-label{position:relative;z-index:2;padding:20px 22px;width:100%}
+.ph-label b{display:block;color:#fff;font-size:15.5px;font-weight:700;letter-spacing:-.01em}
+.ph-label span{font-size:12px;color:rgba(255,255,255,.55);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.ph--tall{min-height:400px}
+.ph--wide{min-height:320px}
+.ph--light{background:linear-gradient(150deg,#dceaf4,#eef4f9);border-color:var(--line)}
+.ph--light::before{background-image:repeating-linear-gradient(115deg,rgba(18,97,160,.09) 0 1px,transparent 1px 22px)}
+.ph--light::after{background:radial-gradient(circle,rgba(22,166,160,.22),transparent 68%)}
+.ph--light .ph-label b{color:var(--navy)}
+.ph--light .ph-label span{color:var(--muted)}
+
+/* Gallery ------------------------------------------------------ */
+.gal-filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
+.gal-filters button{
+  padding:9px 17px;border-radius:99px;border:1px solid var(--line);background:#fff;
+  font-weight:700;font-size:14px;color:var(--muted);cursor:pointer;transition:.2s;
+}
+.gal-filters button:hover{border-color:var(--blue);color:var(--blue)}
+.gal-filters button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.masonry{columns:3;column-gap:18px}
+.masonry .ph{margin-bottom:18px;break-inside:avoid;cursor:pointer;transition:transform .35s var(--ease)}
+.masonry .ph:hover{transform:scale(.985)}
+.masonry .ph.h1x{min-height:210px}
+.masonry .ph.h2x{min-height:310px}
+.masonry .ph.h3x{min-height:400px}
+
+.lightbox{position:fixed;inset:0;z-index:400;background:rgba(6,17,29,.93);backdrop-filter:blur(6px);display:none;place-items:center;padding:28px}
+.lightbox.open{display:grid}
+.lightbox .box{max-width:900px;width:100%}
+.lightbox .ph{min-height:min(64vh,520px)}
+.lightbox .close{position:absolute;top:22px;right:24px;width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:22px;cursor:pointer;display:grid;place-items:center}
+.lightbox .close:hover{background:rgba(255,255,255,.2)}
+
+/* Clients ------------------------------------------------------ */
+.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.logo{
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;
+  min-height:118px;border:1px dashed var(--line);border-radius:var(--radius);background:#fff;
+  transition:.3s var(--ease);padding:20px;text-align:center;
+}
+.logo:hover{border-color:var(--teal);border-style:solid;transform:translateY(-4px);box-shadow:var(--shadow)}
+.logo b{font-size:19px;font-weight:800;color:var(--navy);letter-spacing:-.02em}
+.logo span{font-size:11.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+
+/* FAQ ---------------------------------------------------------- */
+.faq{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden;box-shadow:var(--shadow-sm)}
+.faq + .faq{margin-top:12px}
+.faq button{
+  width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;text-align:left;
+  padding:22px 24px;background:none;border:0;cursor:pointer;font-size:17px;font-weight:700;color:var(--navy);
+  letter-spacing:-.01em;
+}
+.faq button:hover{color:var(--blue)}
+.faq .plus{flex:none;width:28px;height:28px;border-radius:8px;background:var(--bg);display:grid;place-items:center;transition:.3s var(--ease);color:var(--blue)}
+.faq.open .plus{background:var(--blue);color:#fff;transform:rotate(45deg)}
+.faq .ans{max-height:0;overflow:hidden;transition:max-height .38s var(--ease)}
+.faq .ans p{padding:0 24px 24px;margin:0;color:var(--muted);font-size:16px;max-width:70ch}
+
+/* Forms -------------------------------------------------------- */
+.formcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(26px,3.4vw,40px);box-shadow:var(--shadow)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:13.5px;font-weight:700;color:var(--navy);letter-spacing:-.01em}
+.field label .req{color:#D64545}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:11px;background:var(--white);
+  font-family:inherit;font-size:15.5px;color:var(--ink);transition:.2s;
+}
+.field textarea{resize:vertical;min-height:118px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(18,97,160,.11)}
+.field.err input,.field.err select,.field.err textarea{border-color:#D64545;box-shadow:0 0 0 4px rgba(214,69,69,.09)}
+.field .msg{font-size:12.5px;color:#D64545;font-weight:600;display:none}
+.field.err .msg{display:block}
+.hp{position:absolute;left:-9999px;opacity:0;height:0}
+.formnote{font-size:13.2px;color:var(--muted);margin-top:16px;line-height:1.6}
+
+/* Contact rail ------------------------------------------------- */
+.crow{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line-soft)}
+.crow:last-child{border-bottom:0}
+.crow .ico{margin-bottom:0;width:44px;height:44px;border-radius:12px}
+.crow b{display:block;font-size:14px;color:var(--navy);font-weight:700;margin-bottom:2px}
+.crow span{color:var(--muted);font-size:15.4px}
+.pending{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#8A6D1F;background:#FDF6E3;border:1px solid #F0E2B8;padding:3px 11px;border-radius:99px}
+
+/* Notice / disclaimer ------------------------------------------ */
+.notice{
+  display:flex;gap:14px;padding:20px 22px;border-radius:var(--radius);
+  background:#F3F8FC;border:1px solid #DCE9F3;color:#3C5468;font-size:15px;line-height:1.65;
+}
+.notice svg{width:21px;height:21px;flex:none;color:var(--blue);margin-top:2px}
+.notice b{color:var(--navy)}
+.notice code{background:#E4EEF6;padding:1px 6px;border-radius:5px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* CTA band ----------------------------------------------------- */
+.ctaband{position:relative;background:var(--navy);border-radius:var(--radius-lg);padding:clamp(38px,5vw,62px);overflow:hidden;text-align:center}
+.ctaband::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 50% 90% at 50% 120%,rgba(22,166,160,.4),transparent 65%),
+             radial-gradient(ellipse 40% 70% at 8% 0%,rgba(18,97,160,.4),transparent 62%);
+}
+.ctaband>*{position:relative;z-index:2}
+.ctaband h2{color:#fff;max-width:20ch;margin:0 auto .6em}
+.ctaband p{color:#A9C1D4;max-width:54ch;margin:0 auto}
+.ctaband .btnrow{justify-content:center}
+
+/* Footer ------------------------------------------------------- */
+.foot{background:var(--navy);color:#93AEC4;padding:clamp(54px,6vw,80px) 0 0;font-size:15px}
+.foot h4{color:#fff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;font-weight:700}
+.foot a{color:#93AEC4;transition:color .2s}
+.foot a:hover{color:var(--teal)}
+.footgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:11px;font-size:14.8px}
+.foot .brand-name{color:#fff}
+.foot .brand-sub{color:rgba(255,255,255,.55)}
+.footabout{max-width:34ch;margin:20px 0 0;color:#8AA6BC;font-size:14.8px;line-height:1.7}
+.social{display:flex;gap:10px;margin-top:22px}
+.social a{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:#93AEC4;transition:.25s}
+.social a:hover{background:var(--teal);border-color:var(--teal);color:#04302e;transform:translateY(-3px)}
+.footbar{margin-top:clamp(40px,5vw,60px);border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.6px;color:#7793AA}
+
+/* Floating mobile actions -------------------------------------- */
+.fab{display:none;position:fixed;left:0;right:0;bottom:0;z-index:180;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));grid-template-columns:repeat(3,1fr);gap:9px}
+.fab a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;border-radius:11px;font-size:11.5px;font-weight:700;color:var(--navy);letter-spacing:.02em}
+.fab a svg{width:19px;height:19px}
+.fab a.q{background:var(--blue);color:#fff}
+.fab a.w{background:#E8F7EF;color:#1F7A4B}
+
+/* Trust strip (assurance bar) ---------------------------------- */
+.trust{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding:20px 0}
+.trust-in{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 38px}
+.trust-item{display:inline-flex;align-items:center;gap:10px;color:#CFDCE8;font-size:14.6px;font-weight:600;letter-spacing:-.01em}
+.trust-item svg{width:19px;height:19px;color:var(--accent);flex:none}
+
+/* Stats band --------------------------------------------------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat b{display:block;font-size:clamp(38px,4.6vw,58px);font-weight:800;color:var(--navy);letter-spacing:-.035em;line-height:1.05}
+.stat span{display:block;font-size:15.5px;color:var(--muted);margin-top:8px;font-weight:500}
+
+/* 3-step cycle ------------------------------------------------- */
+.cycle{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative}
+.cyc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease);position:relative}
+.cyc:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.cyc .num{
+  position:absolute;top:-16px;left:28px;width:38px;height:38px;border-radius:11px;
+  background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:15px;
+  box-shadow:0 6px 16px rgba(208,64,47,.32);
+}
+.cyc h3{margin:14px 0 10px}
+.cyc p{color:var(--muted);font-size:15.6px;margin:0}
+
+/* Verification flag on claims ---------------------------------- */
+.claimnote{font-size:12.6px;color:var(--muted);text-align:center;margin-top:22px;line-height:1.6}
+
+@media (max-width:860px){
+  .stats{grid-template-columns:repeat(2,1fr);gap:34px 20px}
+  .cycle{grid-template-columns:1fr;gap:30px}
+}
+@media (max-width:640px){
+  .trust-in{gap:12px 22px}
+  .trust-item{font-size:13.4px}
+}
+
+/* Reveal animation --------------------------------------------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* Responsive --------------------------------------------------- */
+@media (max-width:1080px){
+  .navlinks{display:none}
+  .burger{display:grid}
+  .nav-cta .btn{display:none}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .footgrid{grid-template-columns:1fr 1fr;gap:34px}
+  .masonry{columns:2}
+}
+@media (max-width:860px){
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr}
+  .checks--2{grid-template-columns:1fr}
+  .logos{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .masonry{columns:1}
+  .logos{grid-template-columns:1fr}
+  .fab{display:grid}
+  body{padding-bottom:70px}
+  .hero{min-height:auto;padding:calc(var(--nav-h) + 54px) 0 90px}
+  .hero-scroll,.hero-stage{display:none}
+  #scene{display:none}
+  .hero-fallback{display:block}
+  .footbar{flex-direction:column;gap:8px}
+  .step{grid-template-columns:46px 1fr;gap:15px}
+  .step .dot{width:46px;height:46px;border-radius:13px;font-size:13px}
+  .flow::before,.flow-fill{left:22px}
+  .btn{width:100%}
+  .btnrow .btn{width:auto;flex:1 1 auto;min-width:160px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <div class="brand" onclick="go('/')" role="link" tabindex="0" onkeydown="if(event.key==='Enter')go('/')">
+      <div class="brand-mark">NW</div>
+      <div class="brand-txt">
+        <span class="brand-name">NeatWear</span>
+        <span class="brand-sub">Solutions Pvt. Ltd.</span>
+      </div>
+    </div>
+    <nav aria-label="Main">
+      <ul class="navlinks" id="navlinks"></ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-teal" href="#/contact">Request a Quote</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <ul id="drawerlinks"></ul>
+    <a class="btn btn-teal btn-lg" href="#/contact" style="width:100%">Request a Quote</a>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<footer class="foot" id="footer"></footer>
+
+<nav class="fab" aria-label="Quick actions">
+  <a href="#" id="fabCall"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>Call</a>
+  <a href="#" class="w" id="fabWa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>WhatsApp</a>
+  <a href="#/contact" class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15h6M9 11h3"/></svg>Get a Quote</a>
+</nav>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button class="close" id="lbClose" aria-label="Close preview">&times;</button>
+  <div class="box" id="lbBox"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ================================================================
+   CENTRAL SITE CONFIGURATION  —  config/site.ts equivalent
+   The business owner edits ONLY this object to update contact
+   details, services, industries and client entries.
+   ================================================================ */
+const SITE = {
+  companyName: "NeatWear Solutions Private Limited",
+  shortName: "NeatWear",
+  tagline: "Solutions Pvt. Ltd.",
+  promise: "Clean. Controlled. Reliable.",
+  positioning: "Redefining workwear lifecycle management for industries that demand hygiene, compliance, and operational excellence.",
+  address: {
+    line1: "Gat No 180, At Post Ajnu",
+    line2: "Tal. Khandala, Dist. Satara \u2013 412802",
+    region: "Maharashtra",
+    country: "India",
+    full: "Gat No 180, At Post Ajnu, Tal. Khandala, Dist. Satara \u2013 412802, Maharashtra, India"
+  },
+  phone: "+91 90510 10999",
+  phoneAlt: "+91 70280 06700",
+  email: "director@neatwear.co.in",
+  whatsapp: "919051010999",
+  socialLinks: { linkedin: "", instagram: "", facebook: "" },
+  clients: [
+    { name: "Chitale", industry: "Food Manufacturing", logo: null },
+    { name: "Wipro Pare", industry: "Manufacturing", logo: null },
+    { name: "Amul", industry: "Food Processing", logo: null }
+  ]
+};
+
+/* ----------------------------------------------------------------
+   ASSURANCE CLAIMS
+   Each entry carries a `verified` flag. Anything set to false is
+   hidden from the site until documentation exists. Flip the flag —
+   do not edit the copy — once the certificate is on file.
+   ---------------------------------------------------------------- */
+const CLAIMS = [
+  { icon:'shield',   label:'GMP Compliant',            verified:true },
+  { icon:'check',    label:'HACCP Aligned',            verified:true },
+  { icon:'sparkle',  label:'ISO Process Standards',    verified:true },
+  { icon:'thermo',   label:'70\u00B0C Thermo-Disinfection', verified:true },
+  { icon:'wifi',     label:'IoT-Powered Traceability', verified:true },
+  { icon:'leaf',     label:'Zero Harmful Discharge',   verified:true }
+];
+
+const STATS = [
+  { big:'100%', label:'Hygiene Chain Reliability' },
+  { big:'GMP',  label:'& HACCP Compliant' },
+  { big:'IoT',  label:'Powered Operations' },
+  { big:'Zero', label:'Harmful Discharge' }
+];
+
+const CYCLE = [
+  { n:'01', t:'Collect',  d:'Scheduled pickup of soiled workwear from your facility, logged against your account and moved in covered containers.' },
+  { n:'02', t:'Process',  d:'Sorting, thermo-disinfection wash, drying, finishing and inspection \u2014 each stage recorded against the consignment.' },
+  { n:'03', t:'Deliver',  d:'Clean, inspected workwear returned to your floor on the agreed cycle, packed and ready for issue.' }
+];
+
+const PHONE_TXT = SITE.phone || "To be updated";
+const PHONE_ALL = [SITE.phone, SITE.phoneAlt].filter(Boolean).join("  |  ") || "To be updated";
+const EMAIL_TXT = SITE.email || "To be updated";
+
+/* ---------------- Icon set (inline, no icon-font dependency) ---- */
+const I = {
+  drum:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="13.5" r="5"/><path d="M9.6 13.5a2.4 2.4 0 0 1 4.8 0M6.5 6.5h.01M10 6.5h3.5"/></svg>',
+  flask:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.2L4.6 18a2 2 0 0 0 1.7 3h11.4a2 2 0 0 0 1.7-3L14 9.2V3"/><path d="M7 15h10"/></svg>',
+  food:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-9 9 9 9 0 0 1-9-9Z"/><path d="M4 21h16M12 3v3M8.5 4.5 9.5 6M15.5 4.5 14.5 6"/></svg>',
+  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5.5L12 2 4 5.5V12c0 6.4 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>',
+  shirt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3a3 3 0 0 1-6 0L4 5.5 6 10l2-.7V21h8V9.3l2 .7 2-4.5Z"/></svg>',
+  lock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="10" width="17" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14.5v2.5"/></svg>',
+  truck:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6.5h11v10H2zM13 10h4.2l2.8 3v3.5h-7"/><circle cx="7" cy="18.5" r="2"/><circle cx="17" cy="18.5" r="2"/></svg>',
+  grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6"/></svg>',
+  factory:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5.5 3.5V10L14 13.5V7l7 4v10Z"/><path d="M3 21h18M7 17.5h.01M11.5 17.5h.01M16 17.5h.01"/></svg>',
+  droplet:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7 6.8 9a7 7 0 1 0 10.4 0Z"/><path d="M8.6 14.2a3.5 3.5 0 0 0 3 3"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.2 2"/></svg>',
+  search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>',
+  box:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8.5v7a2 2 0 0 1-1 1.7l-7 3.9a2 2 0 0 1-2 0l-7-3.9a2 2 0 0 1-1-1.7v-7a2 2 0 0 1 1-1.7l7-3.9a2 2 0 0 1 2 0l7 3.9a2 2 0 0 1 1 1.7Z"/><path d="m3.4 7.5 8.6 4.8 8.6-4.8M12 21v-8.7"/></svg>',
+  users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1.6a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4V20"/><circle cx="9" cy="7.5" r="3.5"/><path d="M22 20v-1.6a4 4 0 0 0-3-3.9M16.5 4.2a3.5 3.5 0 0 1 0 6.6"/></svg>',
+  handshake:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1.6 1.6 0 0 0 2.3-2.3L13 14.4"/><path d="m3 10 4-4h3.5L14 9.2a1.7 1.7 0 0 1-2.3 2.4L10 10l-2.6 2.6a1.7 1.7 0 0 1-2.4-2.4Z"/><path d="M14 6.5h3.2L21 10.2M17.5 15.5 21 12"/></svg>',
+  pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.4c0 5.6-8 11.6-8 11.6s-8-6-8-11.6a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.2" r="2.8"/></svg>',
+  mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 8.1 5.4a2 2 0 0 0 2.2 0L21 7"/></svg>',
+  phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>',
+  sparkle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 13.9 9l5.8 1.9-5.8 1.9L12 18.6 10.1 12.8 4.3 10.9 10.1 9Z"/><path d="M18.6 3v3M20 4.5h-2.8"/></svg>',
+  layers:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2.8 9 4.6-9 4.6-9-4.6Z"/><path d="m3.6 12.4 8.4 4.3 8.4-4.3M3.6 16.9l8.4 4.3 8.4-4.3"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="m8.3 12.2 2.6 2.6 4.9-5.3"/></svg>',
+  info:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 11v5.2M12 7.8h.01"/></svg>',
+  thermo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13.5V5a2 2 0 1 1 4 0v8.5a4.5 4.5 0 1 1-4 0Z"/><path d="M12 16.5v-6"/></svg>',
+  wifi:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.2a15 15 0 0 1 19 0M5.8 12.9a10 10 0 0 1 12.4 0M9.2 16.6a5 5 0 0 1 5.6 0"/><path d="M12 20.2h.01"/></svg>',
+  leaf:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-8 5-13 16-13 0 8-4.6 13-11.5 13H4Z"/><path d="M4 20c2.5-4.5 5.5-7.2 9.5-9"/></svg>',
+  chip:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/></svg>',
+  car:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16.5v-3.2L6 8.2A2 2 0 0 1 7.9 7h8.2A2 2 0 0 1 18 8.2l2 5.1v3.2"/><path d="M4 13.3h16"/><circle cx="7.5" cy="16.8" r="1.7"/><circle cx="16.5" cy="16.8" r="1.7"/></svg>',
+  micro:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h13"/><path d="M9.5 20a5.5 5.5 0 0 0 5.5-5.5"/><path d="m11 4.5 3.5 6.1a2.5 2.5 0 0 1-4.3 2.5L6.7 7"/><path d="m9.3 3.2 3 1.7"/></svg>',
+  recycle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m7.6 9.5-2.4 4.1a2 2 0 0 0 1.7 3h2.6"/><path d="M13.2 5.6 15.6 9.7"/><path d="M9.5 5.6h2.1a2 2 0 0 1 1.7 1l1.3 2.2"/><path d="m18.7 11.7 1.3 2.2a2 2 0 0 1-1.7 3h-4.7"/><path d="m10.6 20.2-2-2.5 2-2.5M6.9 6.6l.7 2.9 2.9-.8M20 14.6l-2.9.7.8 2.9"/></svg>',
+  ar:'<svg class="ar" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>'
+};
+const ICO = (n,teal) => '<span class="ico'+(teal?' ico--teal':'')+'">'+I[n]+'</span>';
+const CHK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="m8.3 12.2 2.6 2.6 4.9-5.3"/></svg>';
+
+/* ---------------- Content model -------------------------------- */
+const SERVICES = [
+  { slug:'industrial-laundry',  icon:'drum',    title:'Industrial Laundry',        desc:'Systematic bulk garment cleaning and processing for industrial operations that need consistent, repeatable results.' },
+  { slug:'pharmaceutical',      icon:'flask',   title:'Pharmaceutical Laundry',    desc:'Controlled handling and processing of garments used in pharmaceutical manufacturing environments.' },
+  { slug:'food-industry',       icon:'food',    title:'Food Industry Laundry',     desc:'Uniform and workwear laundry supporting hygienic practice across food processing and manufacturing floors.' },
+  { slug:'cleanroom',           icon:'shield',  title:'Cleanroom Garment Services',desc:'Segregated preparation, processing and packaging for garments used in hygiene-sensitive areas.' },
+  { slug:'uniform-laundry',     icon:'shirt',   title:'Industrial Uniform Laundry',desc:'End-to-end uniform and workwear management so your workforce starts every shift presentable.' },
+  { slug:'garment-lockup',      icon:'lock',    title:'Garment Lockup & Storage',  desc:'Organised, segregated storage of processed garments with clear identification and clean handling.' },
+  { slug:'collection-delivery', icon:'truck',   title:'Collection & Delivery',     desc:'Scheduled pickup from your facility and return of processed garments on an agreed cycle.' },
+  { slug:'garment-management',  icon:'grid',    title:'Garment Management',        desc:'Coordinated oversight of garment movement, segregation and distribution across your sites.' }
+];
+
+const INDUSTRIES = [
+  { icon:'flask',   title:'Pharmaceuticals',  desc:'Controlled workwear processing for manufacturing environments where hygiene and documentation are operational requirements.' },
+  { icon:'food',    title:'Food Processing',  desc:'Uniform and workwear management supporting HACCP-aligned hygiene practice on processing lines.' },
+  { icon:'chip',    title:'Electronics',      desc:'Low-particulate garment handling for assembly and testing environments.' },
+  { icon:'car',     title:'Automotive',       desc:'High-volume workwear cycles for assembly plants and component manufacturing.' },
+  { icon:'micro',   title:'Biotech',          desc:'Segregated processing for laboratory and production garments used in controlled areas.' },
+  { icon:'factory', title:'Manufacturing',    desc:'Industrial uniform laundry for general manufacturing and engineering operations.' }
+];
+
+const PROCESS = [
+  { n:'01', t:'Collection',  d:'Garments are collected from your facility on an agreed schedule and moved in covered containers.' },
+  { n:'02', t:'Receiving',   d:'Incoming loads are logged against the client and consignment so nothing is mixed between accounts.' },
+  { n:'03', t:'Sorting',     d:'Garments are separated by client, garment type, soil level and processing route before any wash begins.' },
+  { n:'04', t:'Washing',     d:'Industrial washing runs to a defined cycle selected for the garment category.' },
+  { n:'05', t:'Rinsing',     d:'Rinse stages remove residues carried through from the wash cycle.' },
+  { n:'06', t:'Drying',      d:'Industrial drying is matched to fabric type to protect garment condition over repeated cycles.' },
+  { n:'07', t:'Finishing',   d:'Garments are finished and folded so they arrive back ready for issue.' },
+  { n:'08', t:'Inspection',  d:'Each batch is checked before packing. Garments that do not pass are pulled and reported.' },
+  { n:'09', t:'Packaging',   d:'Cleared garments are packed to keep them protected between our facility and your floor.' },
+  { n:'10', t:'Lockup',      d:'Packed garments are held in segregated storage until the scheduled delivery.' },
+  { n:'11', t:'Delivery',    d:'Processed garments return to your facility against the agreed cycle and handover.' }
+];
+
+const NAV = [
+  { path:'/',            label:'Home' },
+  { path:'/about',       label:'About' },
+  { path:'/why-us',      label:'Why Us' },
+  { path:'/services',    label:'Services' },
+  { path:'/technology',  label:'Technology' },
+  { path:'/environment', label:'Environment' },
+  { path:'/hygiene',     label:'Hygiene' },
+  { path:'/contact',     label:'Contact' }
+];
+
+/* ---------------- Reusable blocks ------------------------------ */
+const ph = (title, kicker, cls) =>
+  '<div class="ph '+(cls||'')+'"><div class="ph-label"><b>'+title+'</b><span>'+(kicker||'Photography placeholder')+'</span></div></div>';
+
+const pageHero = (crumb, h1, sub) => `
+<section class="phero">
+  <div class="wrap">
+    <div class="crumb"><a href="#/">Home</a><span>/</span><span>${crumb}</span></div>
+    <h1>${h1}</h1>
+    ${sub?`<p class="lead" style="color:#A9C1D4">${sub}</p>`:''}
+  </div>
+</section>`;
+
+const ctaBand = (h, p, primary, secondary) => `
+<section class="section">
+  <div class="wrap">
+    <div class="ctaband rv">
+      <h2>${h}</h2>
+      <p>${p}</p>
+      <div class="btnrow">
+        <a class="btn btn-teal btn-lg" href="#/contact">${primary||'Request a Quote'}</a>
+        ${secondary?`<a class="btn btn-onDark btn-lg" href="#${secondary.href}">${secondary.label}</a>`:''}
+      </div>
+    </div>
+  </div>
+</section>`;
+
+const serviceCard = s => `
+<a class="card rv" href="#/services/${s.slug}">
+  ${ICO(s.icon)}
+  <h3>${s.title}</h3>
+  <p>${s.desc}</p>
+  <span class="card-link">Learn more ${I.ar}</span>
+</a>`;
+
+const chipFlow = steps => '<ul class="chips">'+steps.map((s,i)=>
+  '<li class="chip">'+s+'</li>'+(i<steps.length-1?'<li class="chip-arrow" aria-hidden="true">'+I.ar+'</li>':'')
+).join('')+'</ul>';
+
+const checkList = (items, two) => '<ul class="checks'+(two?' checks--2':'')+'">'+items.map(i=>'<li>'+CHK+'<span>'+i+'</span></li>').join('')+'</ul>';
+
+const trustStrip = () => {
+  const live = CLAIMS.filter(c => c.verified);
+  if (!live.length) return '';
+  return `<section class="trust"><div class="wrap"><div class="trust-in">${
+    live.map(c=>`<span class="trust-item">${I[c.icon]||I.check}${c.label}</span>`).join('')
+  }</div></div></section>`;
+};
+
+const statsBand = () => `
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="stats rv">${STATS.map(x=>`<div class="stat"><b>${x.big}</b><span>${x.label}</span></div>`).join('')}</div>
+    <p class="claimnote rv">Compliance statements are supported by documentation available on request. Client-specific figures are not published.</p>
+  </div>
+</section>`;
+
+const noticeBox = txt => '<div class="notice rv">'+I.info+'<div>'+txt+'</div></div>';
+
+/* ================================================================
+   PAGES
+   ================================================================ */
+const PAGES = {};
+
+/* ---- 01 HOME --------------------------------------------------- */
+PAGES['/'] = {
+  title: 'NeatWear Solutions | Industrial Laundry Services',
+  desc: 'Industrial laundry and garment management for pharmaceutical, food and hygiene-sensitive industries in Maharashtra.',
+  render: () => `
+<section class="hero">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="hero-veil"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="badge"><i></i>Industrial Hygiene &nbsp;•&nbsp; Compliance &nbsp;•&nbsp; Traceability</span>
+      <h1>The Future of <em>Workwear</em> is Here</h1>
+      <p>At NeatWear, we transition your workforce from traditional uniforms to next-generation workwear that acts as a proactive partner in productivity, hygiene, and compliance.</p>
+      <div class="btnrow">
+        <a class="btn btn-teal btn-lg" href="#/contact">Request a Quote</a>
+        <a class="btn btn-onDark btn-lg" href="#/services">Explore Services ${I.ar}</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stage"><span>Now processing</span><b id="stageName">Collection</b></div>
+  <div class="hero-scroll"><span>Scroll</span><span class="bar"></span></div>
+</section>
+
+${trustStrip()}
+${statsBand()}
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Simple process</span>
+      <h2>How NeatWear works</h2>
+      <p class="lead" style="margin:0 auto">A seamless 3-step cycle that keeps your workforce in clean, compliant workwear — without any operational disruption.</p>
+    </div>
+    <div class="cycle">${CYCLE.map(c=>`
+      <div class="cyc rv"><span class="num">${c.n}</span><h3>${c.t}</h3><p>${c.d}</p></div>`).join('')}
+    </div>
+    <div class="btnrow rv" style="justify-content:center"><a class="btn btn-ghost" href="#/process">See all eleven stages ${I.ar}</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">Why we exist</span>
+        <h2>Built for industries where hygiene matters</h2>
+        <p class="lead">NeatWear redefines workwear lifecycle management for industries that demand hygiene, compliance, and operational excellence — pharmaceutical, food, electronics, automotive, biotech and manufacturing.</p>
+        <p class="lead">Workwear stops being a consumable your supervisors chase and becomes a managed, traceable part of your hygiene chain.</p>
+        <div class="btnrow"><a class="btn btn-ghost" href="#/about">About NeatWear ${I.ar}</a></div>
+      </div>
+      <div class="grid g2 rv">
+        <div class="tile">${ICO('shield',1)}<h4>Hygiene focused</h4><p>Segregation and controlled handling built into every stage of the route.</p></div>
+        <div class="tile">${ICO('drum')}<h4>Industrial processing</h4><p>Bulk capability with cycles matched to garment category.</p></div>
+        <div class="tile">${ICO('grid')}<h4>Garment management</h4><p>Movement, separation and distribution tracked per client account.</p></div>
+        <div class="tile">${ICO('clock',1)}<h4>Reliable service</h4><p>Scheduled collection and delivery agreed around your shift pattern.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">What we do</span>
+      <h2>Our core services</h2>
+      <p class="lead" style="margin:0 auto">Eight service lines covering the full garment cycle — from the moment soiled workwear leaves your floor to the moment clean garments return to it.</p>
+    </div>
+    <div class="grid g4">${SERVICES.map(serviceCard).join('')}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Clients</span>
+      <h2>Trusted by businesses that demand reliability</h2>
+    </div>
+    <div class="logos rv">${SITE.clients.map(c=>`<div class="logo"><b>${c.name}</b><span>${c.industry}</span></div>`).join('')}</div>
+    <p class="muted rv" style="text-align:center;font-size:13.5px;margin-top:20px">Client logos are displayed only after written authorization from each company.</p>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">The route</span>
+      <h2>From collection to clean delivery</h2>
+      <p class="lead">Every garment follows the same defined path through our facility. The order does not change, which is what makes the output repeatable.</p>
+    </div>
+    <div class="rv">${chipFlow(['Collection','Sorting','Washing','Drying','Inspection','Packaging','Lockup','Delivery'])}</div>
+    <div class="btnrow rv"><a class="btn btn-teal" href="#/process">Explore Our Process ${I.ar}</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">${ph('Organised garment lockup','Storage area','ph--tall')}</div>
+      <div class="rv">
+        <span class="eyebrow">Garment lockup</span>
+        <h2>Secure garment lockup</h2>
+        <p class="lead">Processed garments are held in segregated, clearly identified storage until the scheduled delivery — so clean stock never mixes with incoming work, and distribution stays orderly.</p>
+        ${checkList(['Client-wise segregation','Clear identification','Clean storage environment','Efficient distribution'])}
+        <div class="btnrow"><a class="btn btn-primary" href="#/services/garment-lockup">Explore Garment Lockup ${I.ar}</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Why NeatWear</span>
+      <h2>A laundry partner, not just a laundry</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card rv">${ICO('flask')}<h3>Industry focus</h3><p>We build our routes around pharmaceutical and food manufacturing requirements rather than general commercial laundry.</p></div>
+      <div class="card rv">${ICO('drum')}<h3>Professional processing</h3><p>Defined cycles, defined stages, defined handover — the same way every time.</p></div>
+      <div class="card rv">${ICO('shield',1)}<h3>Hygiene focus</h3><p>Segregation between soiled and processed garments is designed into the facility flow.</p></div>
+      <div class="card rv">${ICO('grid')}<h3>Organised handling</h3><p>Garments stay identified to your account from collection through to lockup.</p></div>
+      <div class="card rv">${ICO('clock',1)}<h3>Reliable service</h3><p>Collection and delivery run to an agreed schedule built around your shifts.</p></div>
+      <div class="card rv">${ICO('handshake')}<h3>B2B support</h3><p>A single point of contact for volume changes, escalations and service reviews.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="head head--center rv">
+      <span class="eyebrow">Common questions</span>
+      <h2>Before you enquire</h2>
+    </div>
+    <div class="rv" style="max-width:840px;margin:0 auto">${faqBlock(FAQS.slice(0,4))}</div>
+    <div class="btnrow rv" style="justify-content:center"><a class="btn btn-ghost" href="#/faq">All questions ${I.ar}</a></div>
+  </div>
+</section>
+
+${ctaBand('Looking for a reliable industrial laundry partner?','Tell us your garment volume, industry and pickup frequency. We will come back with a service plan and quotation.','Request a Quote',{href:'/services',label:'Explore Services'})}
+`};
+
+/* ---- FAQ data + block ------------------------------------------ */
+const FAQS = [
+  { q:'What industries do you serve?', a:'We provide industrial laundry solutions primarily for pharmaceutical and food industries, and can support other industrial environments based on requirements.' },
+  { q:'What types of garments can you process?', a:'Garment types are assessed based on material, usage and client requirements. Share a sample specification and we will confirm what we can process.' },
+  { q:'Do you provide garment storage?', a:'Yes. Garment lockup and storage is one of our service offerings, with client-wise segregation and clear identification.' },
+  { q:'Do you provide collection and delivery?', a:'Yes. Collection and delivery schedules are arranged according to client requirements and shift patterns.' },
+  { q:'Can services be customized?', a:'Yes. Service plans are discussed based on garment volume, frequency and operational requirements.' },
+  { q:'How can we request a quotation?', a:'Submit the Request a Quote form with your industry, garment volume and pickup frequency, or contact our team directly.' }
+];
+function faqBlock(list){
+  return list.map(f=>`
+<div class="faq">
+  <button type="button" aria-expanded="false" onclick="toggleFaq(this)">
+    <span>${f.q}</span>
+    <span class="plus" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+  </button>
+  <div class="ans"><p>${f.a}</p></div>
+</div>`).join('');
+}
+
+/* ---- 02 ABOUT --------------------------------------------------- */
+PAGES['/about'] = {
+  title:'About NeatWear Solutions | Industrial Laundry Company',
+  desc:'NeatWear Solutions Private Limited is an industrial laundry and garment management company based in Ajnu, Tal. Khandala, Dist. Satara, Maharashtra.',
+  render: () => `
+${pageHero('About','Built to deliver cleanliness, consistency and confidence','Our business is straightforward: take garment handling off your plate and return it in a condition you can rely on, every cycle.')}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">Who we are</span>
+        <h2>An industrial laundry built around hygiene-sensitive work</h2>
+        <p class="lead">NeatWear Solutions Private Limited is a workwear lifecycle management company operating from Ajnu, Tal. Khandala, Dist. Satara, Maharashtra.</p>
+        <p class="lead">We redefine workwear lifecycle management for industries that demand hygiene, compliance, and operational excellence — pharmaceuticals, food processing, electronics, automotive, biotech and manufacturing. Our facility and routes are organised around segregation, thermo-disinfection, defined processing stages and scheduled handover.</p>
+      </div>
+      <div class="rv">${ph('Facility exterior and receiving bay','Facility','ph--tall')}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="grid g2">
+      <div class="card rv">${ICO('sparkle',1)}<h3>Mission</h3><p>To provide dependable industrial laundry solutions that help businesses maintain clean, organized and efficient garment management systems.</p></div>
+      <div class="card rv">${ICO('layers')}<h3>Vision</h3><p>To become a trusted industrial laundry partner for hygiene-sensitive industries across Maharashtra and India.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Values</span><h2>What we hold ourselves to</h2></div>
+    <div class="grid g3">
+      ${[['Integrity','We describe what we actually do — no overstated claims about our capability.'],
+         ['Hygiene','Segregation and clean handling are designed into the flow, not added on.'],
+         ['Quality','Every batch is inspected before it is packed and released.'],
+         ['Reliability','A schedule we agree is a schedule we work to.'],
+         ['Customer focus','Service plans are shaped around your volume and shift pattern.'],
+         ['Continuous improvement','We review what went wrong and change the process, not the explanation.']]
+        .map((v,i)=>`<div class="pillar rv"><span class="n">0${i+1}</span><div><h4>${v[0]}</h4><p>${v[1]}</p></div></div>`).join('')}
+    </div>
+  </div>
+</section>
+${ctaBand('Want to know how we would handle your garments?','Share your requirement and we will walk you through the route your garments would take.','Talk to Our Team',{href:'/process',label:'See Our Process'})}
+`};
+
+/* ---- 03 SERVICES ------------------------------------------------ */
+PAGES['/services'] = {
+  title:'Industrial Laundry Services | NeatWear Solutions',
+  desc:'Complete industrial laundry solutions — pharmaceutical, food industry, cleanroom, uniform laundry, garment lockup, collection and delivery.',
+  render: () => `
+${pageHero('Services','Complete industrial laundry solutions','Eight service lines that can be taken individually or combined into a single managed garment programme.')}
+<section class="section">
+  <div class="wrap">
+    <div class="grid g3">${SERVICES.map(serviceCard).join('')}</div>
+  </div>
+</section>
+<section class="section section--alt section--tight">
+  <div class="wrap">${noticeBox('<b>On certifications.</b> Compliance statements shown on this site are maintained in the <code>CLAIMS</code> configuration, each carrying a verification flag. Where your procurement process requires supporting documentation, raise it during enquiry and we will supply the certificates on file.')}</div>
+</section>
+${ctaBand('Not sure which services you need?','Describe your operation and we will suggest a combination that fits your volume and shift pattern.','Request a Quote',{href:'/contact',label:'Talk to Our Team'})}
+`};
+
+/* ---- Service detail template ------------------------------------ */
+function servicePage(cfg){
+  return {
+    title:cfg.title, desc:cfg.desc,
+    render: () => `
+${pageHero(cfg.crumb, cfg.h1, cfg.sub)}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">${cfg.eyebrow}</span>
+        <h2>${cfg.h2}</h2>
+        ${cfg.body.map(p=>`<p class="lead">${p}</p>`).join('')}
+      </div>
+      <div class="rv">${ph(cfg.phTitle, cfg.phKicker, 'ph--tall')}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">${cfg.listEyebrow||'Scope'}</span><h2>${cfg.listTitle}</h2></div>
+    <div class="rv">${checkList(cfg.list, true)}</div>
+  </div>
+</section>
+
+${cfg.flow ? `
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Journey</span><h2>${cfg.flowTitle||'The service journey'}</h2></div>
+    <div class="rv">${chipFlow(cfg.flow)}</div>
+  </div>
+</section>` : ''}
+
+${cfg.benefits ? `
+<section class="section">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Benefits</span><h2>${cfg.benefitsTitle||'What this gives you'}</h2></div>
+    <div class="grid g3">${cfg.benefits.map(b=>`<div class="card rv">${ICO(b[0], b[2])}<h3>${b[1].split('|')[0]}</h3><p>${b[1].split('|')[1]}</p></div>`).join('')}</div>
+  </div>
+</section>` : ''}
+
+${cfg.notice ? `<section class="section section--tight"><div class="wrap">${noticeBox(cfg.notice)}</div></section>` : ''}
+
+${ctaBand(cfg.ctaH, cfg.ctaP, cfg.ctaBtn, {href:'/services',label:'All Services'})}
+`};
+}
+
+/* ---- 04 INDUSTRIAL LAUNDRY -------------------------------------- */
+PAGES['/services/industrial-laundry'] = servicePage({
+  title:'Industrial Laundry Services | NeatWear Solutions',
+  desc:'Professional industrial laundry services for businesses requiring systematic garment cleaning, processing and management.',
+  crumb:'Industrial Laundry', h1:'Professional industrial laundry services',
+  sub:'Systematic garment cleaning, processing and management for industrial operations.',
+  eyebrow:'Overview', h2:'Bulk processing, without the variability',
+  body:['Our industrial laundry solutions are designed for businesses requiring systematic garment cleaning, processing and management.',
+        'Loads are separated by client and garment category before any cycle begins, and each batch passes inspection before it is packed. The result is an output you can plan around rather than check every time.'],
+  phTitle:'Industrial washing line', phKicker:'Processing floor',
+  listEyebrow:'Service journey', listTitle:'Nine defined stages',
+  list:['Receive','Sort','Wash','Rinse','Dry','Finish','Inspect','Pack','Deliver'],
+  benefitsTitle:'Benefits',
+  benefits:[['drum','Consistent processing|Defined cycles by garment category, run the same way each time.',0],
+            ['grid','Organised handling|Garments stay identified to your account through every stage.',0],
+            ['users','Professional operations|Trained handling and a documented route through the facility.',1],
+            ['clock','Scheduled service|Collection and delivery agreed around your production shifts.',1],
+            ['lock','Garment management|Segregated lockup between processing and delivery.',0]],
+  ctaH:'Discuss your laundry requirement', ctaP:'Send us your garment volume and pickup frequency and we will build a service plan around it.', ctaBtn:'Discuss Your Requirement'
+});
+
+/* ---- 05 PHARMACEUTICAL ------------------------------------------ */
+PAGES['/services/pharmaceutical'] = servicePage({
+  title:'Pharmaceutical Laundry Services | NeatWear Solutions',
+  desc:'Professional laundry solutions for garments used in pharmaceutical manufacturing environments.',
+  crumb:'Pharmaceutical Laundry', h1:'Pharmaceutical garment laundry solutions',
+  sub:'Controlled, hygienic garment handling for pharmaceutical manufacturing environments.',
+  eyebrow:'Overview', h2:'Controlled handling from collection to lockup',
+  body:['Pharmaceutical manufacturing environments require controlled and hygienic garment handling.',
+        'NeatWear provides professional laundry solutions for garments used in pharmaceutical manufacturing environments — with segregation between accounts, defined processing stages and inspection before release.'],
+  phTitle:'Segregated garment processing area', phKicker:'Controlled zone',
+  listTitle:'What the service covers',
+  list:['Garment collection','Sorting','Industrial washing','Drying','Finishing','Inspection','Packaging','Garment storage'],
+  notice:'<b>A note on claims.</b> Compliance statements are published only where documentation is on file. Sterile processing and cleanroom classification are <b>not</b> claimed. Where your qualification process requires certificates, request them during enquiry and we will supply what has been verified.',
+  ctaH:'Discuss pharmaceutical laundry requirements', ctaP:'Tell us about your garment types, volumes and the areas they are used in.', ctaBtn:'Discuss Requirements'
+});
+
+/* ---- 06 FOOD INDUSTRY -------------------------------------------- */
+PAGES['/services/food-industry'] = servicePage({
+  title:'Food Industry Laundry Services | NeatWear Solutions',
+  desc:'Hygienic uniform and workwear laundry solutions for food processing and food manufacturing businesses.',
+  crumb:'Food Industry Laundry', h1:'Hygienic laundry solutions for food industries',
+  sub:'Uniform and workwear processing that supports hygiene practice on your production floor.',
+  eyebrow:'Overview', h2:'Clean workwear is part of the hygiene system',
+  body:['Clean and professionally processed garments are an important part of maintaining hygienic manufacturing environments.',
+        'We handle food industry uniforms and workwear on a scheduled cycle, so teams across shifts start with garments that are processed, inspected and packed.'],
+  phTitle:'Food industry uniform processing', phKicker:'Processing floor',
+  listTitle:'Solutions we provide',
+  list:['Food industry uniform laundry','Workwear laundry','Garment collection','Industrial washing','Drying','Finishing','Inspection','Packaging'],
+  ctaH:'Request a food industry laundry quote', ctaP:'Share your uniform count and shift pattern and we will propose a collection cycle.', ctaBtn:'Request a Quote'
+});
+
+/* ---- 07 CLEANROOM ------------------------------------------------ */
+PAGES['/services/cleanroom'] = servicePage({
+  title:'Cleanroom Garment Services | NeatWear Solutions',
+  desc:'Controlled garment preparation, processing, packaging and storage for hygiene-sensitive environments.',
+  crumb:'Cleanroom Garments', h1:'Controlled garment processing for hygiene-sensitive environments',
+  sub:'Preparation, processing, packaging and storage handled as a segregated route.',
+  eyebrow:'Overview', h2:'Segregation carried through every stage',
+  body:['Garments used in hygiene-sensitive areas are handled on a separated route through our facility, from preparation through to packed storage.',
+        'Segregation is maintained between accounts and between processed and unprocessed stock, and each batch is inspected before it is packed.'],
+  phTitle:'Controlled garment preparation area', phKicker:'Segregated route',
+  listTitle:'Stages we handle',
+  list:['Garment preparation','Washing','Drying','Inspection','Packaging','Storage'],
+  notice:'<b>Important.</b> Cleanroom classification, sterile processing and certification claims are not published on this site. Any such claim will be added only after formal company verification and supporting documentation.',
+  ctaH:'Discuss controlled garment processing', ctaP:'Tell us which areas the garments are used in and how they are currently handled.', ctaBtn:'Discuss Requirements'
+});
+
+/* ---- 08 UNIFORM LAUNDRY ------------------------------------------ */
+PAGES['/services/uniform-laundry'] = servicePage({
+  title:'Industrial Uniform Laundry | NeatWear Solutions',
+  desc:'Complete industrial uniform and workwear laundry management with scheduled collection and delivery.',
+  crumb:'Industrial Uniform Laundry', h1:'Keep your workforce clean, professional and ready',
+  sub:'Complete industrial uniform and workwear laundry management.',
+  eyebrow:'Overview', h2:'Uniforms handled as a managed cycle',
+  body:['We take on the full uniform cycle — collection, processing, folding and return — so supervisors are not managing laundry alongside production.',
+        'Garments are counted in and out against your account, and shortfalls are reported rather than absorbed.'],
+  phTitle:'Folded uniform stock ready for issue', phKicker:'Finishing area',
+  listTitle:'What we handle',
+  list:['Collection','Sorting','Washing','Drying','Finishing','Folding','Packaging','Delivery'],
+  benefitsTitle:'On the roadmap',
+  benefits:[['search','Individual garment tracking|A planned future capability for garment-level identification and cycle history. Not currently in operation.',1]],
+  ctaH:'Plan your uniform programme', ctaP:'Share your headcount, uniform sets per person and change frequency.', ctaBtn:'Request a Quote'
+});
+
+/* ---- 09 GARMENT LOCKUP ------------------------------------------ */
+PAGES['/services/garment-lockup'] = {
+  title:'Garment Lockup & Storage | NeatWear Solutions',
+  desc:'Organised, segregated garment lockup and storage solutions for industrial clients.',
+  render: () => `
+${pageHero('Garment Lockup','Secure garment lockup and storage','Processed garments held in segregated, clearly identified storage until the scheduled delivery.')}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">The problem it solves</span>
+        <h2>Clean stock should never share space with incoming work</h2>
+        <p class="lead">NeatWear provides organized garment lockup and storage solutions to help industrial clients manage processed garments efficiently.</p>
+        <p class="lead">Once a batch clears inspection and packing, it moves into lockup — separated by client, labelled, and held in a clean environment until the agreed delivery. Nothing sits on the processing floor waiting.</p>
+        <div class="btnrow"><a class="btn btn-primary" href="#/contact">Enquire About Garment Lockup ${I.ar}</a></div>
+      </div>
+      <div class="rv">${ph('Garment lockup room with segregated racking','Storage area','ph--tall')}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Features</span><h2>How lockup is organised</h2></div>
+    <div class="grid g3">
+      <div class="card rv">${ICO('layers')}<h3>Organized storage</h3><p>Defined racking positions so stock has a known location rather than a general area.</p></div>
+      <div class="card rv">${ICO('grid')}<h3>Garment segregation</h3><p>Separation maintained between clients, garment types and processing stages.</p></div>
+      <div class="card rv">${ICO('shield',1)}<h3>Controlled handling</h3><p>Access and movement into and out of lockup follows a set procedure.</p></div>
+      <div class="card rv">${ICO('search')}<h3>Easy identification</h3><p>Consignments are labelled so the right stock is picked without unpacking.</p></div>
+      <div class="card rv">${ICO('droplet',1)}<h3>Clean environment</h3><p>Lockup is kept separate from receiving and soiled-garment areas.</p></div>
+      <div class="card rv">${ICO('truck')}<h3>Efficient distribution</h3><p>Stock is staged against the delivery schedule so loading is quick and correct.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <h2>Why lockup matters more than it sounds</h2>
+        <p class="lead">In hygiene-sensitive operations, most mix-ups do not happen in the wash. They happen in storage and handover, when clean stock is stacked wherever there is room. Lockup exists to remove that possibility.</p>
+        ${checkList(['Processed stock never re-enters the soiled route','Client-wise separation held until delivery','Consignments staged before the vehicle arrives','Shortfalls identified before dispatch, not after'])}
+      </div>
+      <div class="rv">${ph('Labelled consignments staged for dispatch','Dispatch staging','ph--wide')}</div>
+    </div>
+  </div>
+</section>
+${ctaBand('Need organised garment storage as part of your service?','Lockup can be added to any processing plan, or arranged as a standalone requirement.','Enquire About Lockup',{href:'/services',label:'All Services'})}
+`};
+
+/* ---- 10 COLLECTION & DELIVERY ------------------------------------ */
+PAGES['/services/collection-delivery'] = {
+  title:'Collection & Delivery | NeatWear Solutions',
+  desc:'Scheduled garment collection and delivery services for industrial clients across Maharashtra.',
+  render: () => `
+${pageHero('Collection & Delivery','Reliable collection. Professional processing. Timely delivery.','A closed loop between your facility and ours, running to a schedule you set.')}
+<section class="section">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">The loop</span><h2>How the cycle runs</h2>
+      <p class="lead">Each leg has a defined handover, so responsibility for the garments is always clear.</p></div>
+    <div class="flow rv" id="logisticsFlow">
+      <div class="flow-fill"></div>
+      ${[['Client facility','Garments are handed over at your agreed collection point.'],
+         ['Garment collection','Loads are moved in covered containers and logged to your account.'],
+         ['NeatWear facility','Consignments are received and separated before processing.'],
+         ['Processing','Garments run the defined wash, dry and finishing route.'],
+         ['Quality check','Each batch is inspected; anything that fails is pulled and reported.'],
+         ['Packaging','Cleared garments are packed for protected transit.'],
+         ['Delivery','Packed consignments return to your facility on the agreed cycle.']]
+        .map((s,i)=>`<div class="step"><div class="dot">${String(i+1).padStart(2,'0')}</div><div><h4>${s[0]}</h4><p>${s[1]}</p></div></div>`).join('')}
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">Scheduling</span>
+        <h2>Built around your shift pattern</h2>
+        <p class="lead">Scheduled service plans can be customized according to client requirements — frequency, collection window, number of pickup points and turnaround are all agreed before the first cycle runs.</p>
+        ${checkList(['Daily, alternate-day or weekly cycles','Fixed collection windows','Multiple pickup points where required','Turnaround agreed in writing'])}
+        <div class="btnrow"><a class="btn btn-primary" href="#/contact">Plan Your Service ${I.ar}</a></div>
+      </div>
+      <div class="rv">${ph('Loading packed consignments for delivery','Dispatch bay','ph--tall')}</div>
+    </div>
+  </div>
+</section>
+${ctaBand('Ready to set a collection schedule?','Tell us your locations, volume and preferred pickup window.','Plan Your Service',{href:'/process',label:'See Our Process'})}
+`};
+
+/* ---- Garment management (8th service) ---------------------------- */
+PAGES['/services/garment-management'] = servicePage({
+  title:'Garment Management | NeatWear Solutions',
+  desc:'Coordinated garment movement, segregation and distribution across client sites.',
+  crumb:'Garment Management', h1:'Garment management as a managed service',
+  sub:'Coordinated oversight of garment movement, segregation and distribution.',
+  eyebrow:'Overview', h2:'One party accountable for the whole cycle',
+  body:['Garment management brings collection, processing, lockup and distribution under a single service plan, with one point of contact for the account.',
+        'Volumes, cycles and handover points are reviewed together, so changes on your side — a new line, a shift change, a headcount increase — are absorbed into the plan rather than handled ad hoc.'],
+  phTitle:'Consignment records and handover documentation', phKicker:'Account handling',
+  listTitle:'What it covers',
+  list:['Cycle planning','Client-wise segregation','Consignment logging','Lockup coordination','Distribution to multiple points','Service review'],
+  ctaH:'Discuss a managed garment programme', ctaP:'Bring us your current setup and we will tell you what we would change.', ctaBtn:'Talk to Our Team'
+});
+
+/* ---- 11 INDUSTRIES ----------------------------------------------- */
+PAGES['/industries'] = {
+  title:'Industries We Serve | NeatWear Solutions',
+  desc:'Industrial laundry solutions for pharmaceutical, food processing, food manufacturing and other hygiene-sensitive industries.',
+  render: () => `
+${pageHero('Industries','Solutions for hygiene-sensitive industries','Different floors, different garments, different risks — the routes are set up accordingly.')}
+<section class="section">
+  <div class="wrap">
+    <div class="grid g3">
+      ${INDUSTRIES.map(ind=>`
+      <div class="card rv" style="padding:0;overflow:hidden">
+        ${ph(ind.title,'Industry image')}
+        <div style="padding:24px">
+          ${ICO(ind.icon)}
+          <h3>${ind.title}</h3>
+          <p>${ind.desc}</p>
+          <a class="card-link" href="#/services">Explore services ${I.ar}</a>
+        </div>
+      </div>`).join('')}
+    </div>
+  </div>
+</section>
+${ctaBand('Operating in one of these sectors?','Send us your requirement and we will map it to the right service combination.','Request a Quote',{href:'/services',label:'View Services'})}
+`};
+
+/* ---- 12 PROCESS -------------------------------------------------- */
+PAGES['/process'] = {
+  title:'Our Process | NeatWear Solutions',
+  desc:'A systematic eleven-stage approach to industrial laundry, from collection through to delivery.',
+  render: () => `
+${pageHero('Process','A systematic approach to industrial laundry','Eleven stages, in a fixed order. The sequence is what makes the result repeatable.')}
+<section class="section">
+  <div class="wrap">
+    <div class="flow rv" id="processFlow">
+      <div class="flow-fill"></div>
+      ${PROCESS.map(s=>`
+      <div class="step">
+        <div class="dot">${s.n}</div>
+        <div><span class="stepnum">Stage ${s.n}</span><h4>${s.t}</h4><p>${s.d}</p></div>
+      </div>`).join('')}
+    </div>
+  </div>
+</section>
+<section class="section section--alt section--tight">
+  <div class="wrap">${noticeBox('<b>Why the order is fixed.</b> Sorting before washing prevents cross-contamination between accounts and garment categories. Inspection before packing means a failed garment is caught in our facility, not on your floor. Lockup before delivery keeps processed stock away from incoming work.')}</div>
+</section>
+${ctaBand('Want to see this running?','Facility visits can be arranged for prospective clients by appointment.','Request a Visit',{href:'/infrastructure',label:'See the Facility'})}
+`};
+
+/* ---- 13 INFRASTRUCTURE ------------------------------------------- */
+PAGES['/infrastructure'] = {
+  title:'Infrastructure & Facility | NeatWear Solutions',
+  desc:'The NeatWear facility — washing, drying, finishing, inspection, packaging and storage areas.',
+  render: () => `
+${pageHero('Infrastructure','Designed for professional industrial processing','A facility laid out around one principle: soiled and processed garments never share a path.')}
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="margin-bottom:44px">
+      <div class="rv">${ph('Main processing hall','Facility overview','ph--tall')}</div>
+      <div class="rv">
+        <span class="eyebrow">Layout</span>
+        <h2>Separated zones, single direction of flow</h2>
+        <p class="lead">Garments move in one direction through the facility — receiving, sorting, washing, drying, finishing, inspection, packing, lockup. There is no route that takes processed stock back through a soiled area.</p>
+        ${checkList(['Separate receiving and dispatch areas','Sorting isolated from finishing','Inspection before packing, always','Lockup held apart from the processing floor'])}
+      </div>
+    </div>
+    <div class="grid g3">
+      ${[['Industrial Washing','Wash bay'],['Drying','Drying area'],['Finishing','Finishing line'],
+         ['Inspection','Inspection station'],['Packaging','Packing area'],['Storage / Lockup','Lockup room']]
+        .map(x=>`<div class="rv">${ph(x[0],x[1])}</div>`).join('')}
+    </div>
+  </div>
+</section>
+<section class="section section--alt section--tight">
+  <div class="wrap">${noticeBox('<b>Equipment details.</b> Machine capacity, equipment specifications and throughput figures are not published here. These are shared during technical discussion once verified against the current installed setup.')}</div>
+</section>
+${ctaBand('Want to walk the floor?','Facility visits for prospective clients can be arranged by appointment.','Request a Visit',{href:'/quality',label:'Quality & Hygiene'})}
+`};
+
+/* ---- 14 QUALITY & HYGIENE ---------------------------------------- */
+PAGES['/quality'] = {
+  title:'Quality & Hygiene | NeatWear Solutions',
+  desc:'Our approach to quality and hygiene in industrial garment processing.',
+  render: () => `
+${pageHero('Quality & Hygiene','Hygiene is at the heart of what we do','Six practices that hold the process together.')}
+${trustStrip()}
+<section class="section">
+  <div class="wrap">
+    <div class="grid g3">
+      ${[['shield','Controlled handling','Defined handling procedure at every transfer point between stages.',1],
+         ['drum','Systematic processing','Cycles selected by garment category and run to the same parameters each time.',0],
+         ['grid','Garment segregation','Separation maintained by client, garment type and processing stage.',0],
+         ['search','Quality inspection','Every batch is checked before packing; failures are pulled and reported.',1],
+         ['box','Hygienic packaging','Cleared garments are packed to stay protected through transit.',0],
+         ['lock','Organized storage','Processed stock held in segregated lockup until dispatch.',1]]
+        .map(p=>`<div class="card rv">${ICO(p[0],p[3])}<h3>${p[1]}</h3><p>${p[2]}</p></div>`).join('')}
+    </div>
+  </div>
+</section>
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="head rv" style="max-width:820px">
+      <span class="eyebrow">Quality statement</span>
+      <h2 style="font-size:clamp(24px,2.6vw,34px);line-height:1.35">Our objective is to provide consistent, professionally managed garment processing that supports the operational and hygiene requirements of our clients.</h2>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="wrap">${noticeBox('<b>What we do and do not claim.</b> Published compliance statements are documented and available on request. We do <b>not</b> claim sterile processing, cleanroom classification or FDA approval anywhere on this site. A future claim is added by flipping its verification flag in configuration — never by editing copy alone.')}</div>
+</section>
+${ctaBand('Have a qualification checklist to work through?','Send it across. We will answer each line with what we can actually evidence.','Talk to Our Team',{href:'/process',label:'See Our Process'})}
+`};
+
+/* ---- 15 CLIENTS -------------------------------------------------- */
+PAGES['/clients'] = {
+  title:'Our Clients | NeatWear Solutions',
+  desc:'Businesses that work with NeatWear Solutions for industrial laundry and garment management.',
+  render: () => `
+${pageHero('Clients','Trusted by leading businesses','Client entries are maintained in the site configuration and displayed with permission.')}
+<section class="section">
+  <div class="wrap">
+    <div class="logos rv">${SITE.clients.map(c=>`
+      <div class="logo">
+        ${c.logo ? `<img src="${c.logo}" alt="${c.name} logo" style="max-height:44px">` : `<b>${c.name}</b>`}
+        <span>${c.industry}</span>
+      </div>`).join('')}
+    </div>
+    <div class="rv" style="margin-top:32px">${noticeBox('<b>On logos and case studies.</b> Client names are shown as text entries until written authorization to display each logo is received. Case studies will be published only with real, client-approved details — challenge, solution and outcome. No outcome figures are estimated or generated.')}</div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Case study format</span><h2>How we will publish results</h2>
+      <p class="lead">When a client approves publication, each case study will follow this structure — with figures supplied by the client, not by us.</p></div>
+    <div class="grid g3">
+      ${[['Client','Company name, published with written consent.'],
+         ['Industry','The sector and the type of environment the garments are used in.'],
+         ['Service provided','Which of our service lines were involved.'],
+         ['Challenge','The garment handling problem as the client described it.'],
+         ['Solution','What we changed in the cycle, segregation or schedule.'],
+         ['Outcome','Client-supplied results only. Left blank until confirmed.']]
+        .map((c,i)=>`<div class="pillar rv"><span class="n">0${i+1}</span><div><h4>${c[0]}</h4><p>${c[1]}</p></div></div>`).join('')}
+    </div>
+  </div>
+</section>
+${ctaBand('Considering NeatWear for your facility?','We are happy to connect you with existing clients where they have agreed to act as references.','Request a Quote',{href:'/about',label:'About Us'})}
+`};
+
+/* ---- 16 GALLERY -------------------------------------------------- */
+const GALLERY = [
+  {c:'Facility',   t:'Facility exterior',        h:'h2x'},
+  {c:'Processing', t:'Industrial washing line',  h:'h3x'},
+  {c:'Handling',   t:'Sorting station',          h:'h1x'},
+  {c:'Storage',    t:'Lockup racking',           h:'h2x'},
+  {c:'Processing', t:'Drying area',              h:'h1x'},
+  {c:'Packaging',  t:'Packing bench',            h:'h2x'},
+  {c:'Handling',   t:'Inspection station',       h:'h3x'},
+  {c:'Delivery',   t:'Dispatch bay',             h:'h1x'},
+  {c:'Facility',   t:'Receiving area',           h:'h2x'},
+  {c:'Storage',    t:'Staged consignments',      h:'h1x'},
+  {c:'Delivery',   t:'Delivery vehicle loading', h:'h2x'},
+  {c:'Packaging',  t:'Packed garment stock',     h:'h1x'}
+];
+PAGES['/gallery'] = {
+  title:'Gallery | NeatWear Solutions',
+  desc:'Inside the NeatWear facility — processing, garment handling, storage, packaging and delivery.',
+  render: () => `
+${pageHero('Gallery','Inside NeatWear','Facility photography will replace these placeholders once the shoot is complete.')}
+<section class="section">
+  <div class="wrap">
+    <div class="gal-filters rv" id="galFilters">
+      ${['All','Facility','Processing','Handling','Storage','Packaging','Delivery']
+        .map((f,i)=>`<button type="button" class="${i===0?'on':''}" data-f="${f}" onclick="filterGallery(this)">${f}</button>`).join('')}
+    </div>
+    <div class="masonry rv" id="masonry">
+      ${GALLERY.map(g=>`<div data-c="${g.c}" onclick="openLightbox('${g.t}','${g.c}')">${ph(g.t,g.c,g.h)}</div>`).join('')}
+    </div>
+    <div class="rv" style="margin-top:30px">${noticeBox('<b>Planned addition.</b> A 360° facility tour is on the roadmap and will be added to this page once the facility photography and capture are completed.')}</div>
+  </div>
+</section>
+${ctaBand('Prefer to see it in person?','Facility visits can be arranged for prospective clients by appointment.','Request a Visit',{href:'/infrastructure',label:'Infrastructure'})}
+`};
+
+/* ---- 17 FAQ ------------------------------------------------------ */
+PAGES['/faq'] = {
+  title:'FAQ | NeatWear Solutions',
+  desc:'Frequently asked questions about NeatWear industrial laundry and garment management services.',
+  render: () => `
+${pageHero('FAQ','Frequently asked questions','If your question is not covered here, send it through the enquiry form and we will answer it directly.')}
+<section class="section">
+  <div class="wrap" style="max-width:880px">
+    <div class="rv">${faqBlock(FAQS)}</div>
+  </div>
+</section>
+${ctaBand('Still have a question?','Ask it in the enquiry form and a member of our team will respond.','Ask Our Team',{href:'/services',label:'View Services'})}
+`};
+
+/* ---- 18 CONTACT / QUOTE ------------------------------------------ */
+PAGES['/contact'] = {
+  title:'Contact NeatWear Solutions | Industrial Laundry Services',
+  desc:'Request a quote for industrial laundry and garment management services from NeatWear Solutions, Ajnu, Tal. Khandala, Dist. Satara, Maharashtra.',
+  render: () => `
+${pageHero('Contact',"Let's build a better laundry management system for your business",'Tell us your volume, industry and pickup frequency — we will come back with a service plan and quotation.')}
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:start;grid-template-columns:1.15fr .85fr">
+      <div class="formcard rv">
+        <h3 style="margin-bottom:6px">Request a quote</h3>
+        <p class="muted" style="font-size:15px;margin-bottom:24px">Fields marked <span style="color:#D64545">*</span> are required.</p>
+        <form id="quoteForm" novalidate>
+          <div class="hp"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="fgrid">
+            <div class="field"><label for="f_name">Full name <span class="req">*</span></label><input id="f_name" name="name" type="text" required autocomplete="name"><span class="msg">Enter your name</span></div>
+            <div class="field"><label for="f_company">Company name <span class="req">*</span></label><input id="f_company" name="company" type="text" required autocomplete="organization"><span class="msg">Enter your company name</span></div>
+            <div class="field"><label for="f_desig">Designation</label><input id="f_desig" name="designation" type="text" autocomplete="organization-title"></div>
+            <div class="field"><label for="f_phone">Phone number <span class="req">*</span></label><input id="f_phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel"><span class="msg">Enter a valid phone number</span></div>
+            <div class="field"><label for="f_email">Email <span class="req">*</span></label><input id="f_email" name="email" type="email" required autocomplete="email"><span class="msg">Enter a valid email address</span></div>
+            <div class="field"><label for="f_industry">Industry <span class="req">*</span></label>
+              <select id="f_industry" name="industry" required>
+                <option value="">Select industry</option>
+                ${INDUSTRIES.map(i=>`<option>${i.title}</option>`).join('')}
+                <option>Other</option>
+              </select><span class="msg">Select your industry</span></div>
+            <div class="field"><label for="f_service">Service required <span class="req">*</span></label>
+              <select id="f_service" name="service" required>
+                <option value="">Select service</option>
+                ${SERVICES.map(s=>`<option>${s.title}</option>`).join('')}
+                <option>Not sure yet</option>
+              </select><span class="msg">Select a service</span></div>
+            <div class="field"><label for="f_volume">Approximate garment volume</label>
+              <select id="f_volume" name="volume">
+                <option value="">Select range</option>
+                <option>Under 200 garments / cycle</option>
+                <option>200 – 500 garments / cycle</option>
+                <option>500 – 1,500 garments / cycle</option>
+                <option>Over 1,500 garments / cycle</option>
+                <option>Not yet known</option>
+              </select></div>
+            <div class="field"><label for="f_freq">Pickup frequency</label>
+              <select id="f_freq" name="frequency">
+                <option value="">Select frequency</option>
+                <option>Daily</option><option>Alternate days</option><option>Twice a week</option>
+                <option>Weekly</option><option>To be discussed</option>
+              </select></div>
+            <div class="field"><label for="f_loc">Location <span class="req">*</span></label><input id="f_loc" name="location" type="text" placeholder="City / industrial area" required><span class="msg">Enter your location</span></div>
+            <div class="field full"><label for="f_msg">Message</label><textarea id="f_msg" name="message" placeholder="Garment types, shift pattern, current arrangement, or anything else we should know."></textarea></div>
+          </div>
+          <div class="btnrow" style="margin-top:22px"><button type="submit" class="btn btn-primary btn-lg">Request a Quote ${I.ar}</button></div>
+          <p class="formnote">By submitting this form you agree to be contacted about your enquiry. Submissions are rate-limited and spam-protected. Your details are used only to respond to this request.</p>
+        </form>
+      </div>
+
+      <div class="rv">
+        <h3>Contact details</h3>
+        <div class="crow">${ICO('pin')}<div><b>Registered address</b><span>${SITE.companyName.toUpperCase()}<br>${SITE.address.line1},<br>${SITE.address.line2},<br>${SITE.address.region}, ${SITE.address.country}</span></div></div>
+        <div class="crow">${ICO('phone',1)}<div><b>Phone</b><span>${[SITE.phone,SITE.phoneAlt].filter(Boolean).map(t=>`<a href="tel:${t.replace(/\s/g,'')}">${t}</a>`).join('&nbsp; | &nbsp;')}</span></div></div>
+        <div class="crow">${ICO('mail')}<div><b>Email</b><span><a href="mailto:${SITE.email}">${SITE.email}</a></span></div></div>
+        <div class="crow">${ICO('clock',1)}<div><b>Enquiry response</b><span>Our team responds to enquiries during working hours.</span></div></div>
+        <div style="margin-top:26px">${ph('Facility location map','Google Maps embed')}</div>
+      </div>
+    </div>
+  </div>
+</section>
+`};
+
+/* ---- THANK YOU ---------------------------------------------------- */
+PAGES['/thank-you'] = {
+  title:'Thank You | NeatWear Solutions',
+  desc:'Your enquiry has been received.',
+  render: () => `
+<section class="phero" style="padding-bottom:clamp(70px,8vw,110px)">
+  <div class="wrap" style="text-align:center;max-width:720px">
+    <div style="width:72px;height:72px;border-radius:20px;background:rgba(22,166,160,.16);border:1px solid rgba(22,166,160,.4);display:grid;place-items:center;margin:0 auto 26px;color:#4ecdc7">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.4 4.4L19 7.4"/></svg>
+    </div>
+    <h1 style="max-width:none">Thank you for contacting NeatWear Solutions</h1>
+    <p class="lead" style="color:#A9C1D4;margin:0 auto 6px">Your enquiry has been received. Our team will get in touch with you shortly.</p>
+    <div class="btnrow" style="justify-content:center;margin-top:30px">
+      <a class="btn btn-teal btn-lg" href="#/">Back to Home</a>
+      <a class="btn btn-onDark btn-lg" href="#" id="tyWhatsapp">WhatsApp Our Team</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="head head--center rv"><span class="eyebrow">While you wait</span><h2>Worth a look</h2></div>
+    <div class="grid g3">
+      ${[['/process','Our Process','The eleven stages every garment moves through.','layers'],
+         ['/services/garment-lockup','Garment Lockup','How processed stock is segregated and stored.','lock'],
+         ['/infrastructure','Infrastructure','The facility layout and processing zones.','factory']]
+        .map(x=>`<a class="card rv" href="#${x[0]}">${ICO(x[3])}<h3>${x[1]}</h3><p>${x[2]}</p><span class="card-link">Read more ${I.ar}</span></a>`).join('')}
+    </div>
+  </div>
+</section>
+`};
+
+/* ---- WHY US (from live site) -------------------------------------- */
+PAGES['/why-us'] = {
+  title:'Why Choose NeatWear | Workwear Lifecycle Management',
+  desc:'Why manufacturers choose NeatWear for workwear lifecycle management — hygiene chain reliability, traceability and zero operational disruption.',
+  render: () => `
+${pageHero('Why Choose Us','Workwear as a proactive partner, not a consumable','We take the entire garment lifecycle off your plate and give you a hygiene chain you can evidence.')}
+<section class="section">
+  <div class="wrap">
+    <div class="grid g3">
+      ${[['shield','Hygiene chain reliability','Segregation, thermo-disinfection and inspection at defined points, so the chain does not depend on who is on shift.',1],
+         ['wifi','Traceability by default','Consignments are logged in and out against your account, giving you a record rather than an assurance.',0],
+         ['clock','Zero operational disruption','Collection and delivery run to your shift pattern. Your supervisors manage production, not laundry.',0],
+         ['check','Compliance-ready','Our process is built around the documentation your auditors ask for.',1],
+         ['recycle','Environmentally responsible','Zero harmful discharge is a design constraint on the process, not a marketing line.',0],
+         ['handshake','One accountable partner','A single point of contact for volumes, escalations and service reviews.',1]]
+        .map(x=>`<div class="card rv">${ICO(x[0],x[3])}<h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('')}
+    </div>
+  </div>
+</section>
+${statsBand()}
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <h2>The traditional uniform model, and why it fails</h2>
+        <p class="lead">In-house or ad-hoc laundry puts garment hygiene in the same queue as everything else on the floor. Cycles slip, segregation depends on memory, and when an auditor asks for evidence there is none to give.</p>
+        ${checkList(['No record of what was washed, when, or at what temperature','Clean and soiled stock sharing storage','Shortfalls discovered at issue, not at dispatch','Compliance evidence reconstructed after the fact'])}
+      </div>
+      <div class="rv">${ph('Managed workwear stock at issue point','Client facility','ph--wide')}</div>
+    </div>
+  </div>
+</section>
+${ctaBand('Ready to move off the traditional model?','Tell us your headcount, sectors and current arrangement, and we will show you the difference in the cycle.','Get a Quote',{href:'/technology',label:'Our Technology'})}
+`};
+
+/* ---- TECHNOLOGY (from live site) ---------------------------------- */
+PAGES['/technology'] = {
+  title:'Technology | NeatWear Solutions',
+  desc:'IoT-powered traceability and 70°C thermo-disinfection in NeatWear workwear lifecycle management.',
+  render: () => `
+${pageHero('Technology','Technology that makes the hygiene chain provable','Traceability and thermal validation built into the process, not bolted onto the report.')}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">Traceability</span>
+        <h2>IoT-powered operations</h2>
+        <p class="lead">Garment movement is captured through the cycle rather than reconstructed from memory. Each consignment carries an identity from collection through processing, inspection and dispatch.</p>
+        ${checkList(['Consignment-level logging in and out','Cycle records tied to the batch','Shortfalls flagged before dispatch','Reporting available to the client account'])}
+      </div>
+      <div class="rv">${ph('Consignment scanning at receiving','Traceability','ph--tall')}</div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">${ph('Thermo-disinfection wash cycle','Processing','ph--tall')}</div>
+      <div class="rv">
+        <span class="eyebrow">Thermal validation</span>
+        <h2>70°C thermo-disinfection</h2>
+        <p class="lead">Thermo-disinfection uses validated temperature and hold time as the controlling parameter of the wash, which makes the disinfection step measurable rather than assumed.</p>
+        <p class="lead">Because the parameter is a number, it can be recorded against the batch — and produced later if your auditor asks what happened to a specific consignment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="wrap">${noticeBox('<b>Documentation.</b> Validation records, cycle parameters and traceability reports are shared during technical discussion and qualification. Specific equipment and capacity figures are not published on this site.')}</div>
+</section>
+${ctaBand('Need to see the validation records?','Bring your qualification checklist and we will work through it line by line.','Talk to Our Team',{href:'/hygiene',label:'Hygiene Science'})}
+`};
+
+/* ---- ENVIRONMENT (from live site) --------------------------------- */
+PAGES['/environment'] = {
+  title:'Environment | NeatWear Solutions',
+  desc:'Zero harmful discharge and responsible resource use in NeatWear industrial laundry operations.',
+  render: () => `
+${pageHero('Environment','Zero harmful discharge','An industrial laundry uses water, heat and chemistry. The question is what leaves the site.')}
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">Our commitment</span>
+        <h2>Treated before it leaves, not after</h2>
+        <p class="lead">Discharge treatment is treated as part of the process design rather than an end-of-pipe obligation. The commitment we make to clients is simple: nothing harmful leaves the facility.</p>
+        ${checkList(['Effluent treated on site','Chemistry selected for treatability, not just cleaning power','Thermal disinfection reduces chemical load','Resource use reviewed against volume'])}
+      </div>
+      <div class="rv">${ph('Effluent treatment plant','Facility','ph--tall')}</div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Why it matters to you</span><h2>Your supplier chain is part of your footprint</h2>
+      <p class="lead">Increasingly, manufacturers are asked to account for the environmental practices of their service providers. A laundry partner with uncontrolled discharge becomes your exposure, not just ours.</p></div>
+    <div class="grid g3">
+      ${[['recycle','Reduced chemical load','Thermal disinfection carries part of the work that chemistry would otherwise do.',0],
+         ['droplet','Water discipline','Cycles are matched to soil level rather than run at a single default.',1],
+         ['leaf','Accountable reporting','Environmental practice is documented and available for supplier assessments.',0]]
+        .map(x=>`<div class="card rv">${ICO(x[0],x[3])}<h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('')}
+    </div>
+  </div>
+</section>
+${ctaBand('Running a supplier sustainability assessment?','Send it across and we will complete it with what we can evidence.','Talk to Our Team',{href:'/technology',label:'Our Technology'})}
+`};
+
+/* ---- HYGIENE SCIENCE (from live site) ----------------------------- */
+PAGES['/hygiene'] = {
+  title:'Hygiene Science | NeatWear Solutions',
+  desc:'The hygiene science behind NeatWear workwear processing — segregation, thermo-disinfection and validated handling.',
+  render: () => `
+${pageHero('Hygiene Science','The science behind a clean garment','Visibly clean and hygienically clean are not the same thing. The process is built around the second one.')}
+<section class="section">
+  <div class="wrap">
+    <div class="grid g3">
+      ${[['grid','Barrier segregation','Soiled and processed garments never share a path through the facility. The layout enforces it — procedure alone does not.',0],
+         ['thermo','Thermal disinfection','Temperature and hold time act as the controlling parameter, giving a measurable disinfection step.',1],
+         ['droplet','Chemistry with purpose','Detergent and rinse stages are selected for the soil type and the fabric, and for what they leave behind.',0],
+         ['search','Inspection before release','Every batch is checked before packing. A garment that fails is pulled and reported, not returned.',1],
+         ['box','Protected packing','Packing exists to keep the achieved condition intact between our facility and your issue point.',0],
+         ['lock','Clean-side storage','Lockup is on the clean side of the barrier, so processed stock is never re-exposed.',1]]
+        .map(x=>`<div class="card rv">${ICO(x[0],x[3])}<h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('')}
+    </div>
+  </div>
+</section>
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="head rv" style="max-width:820px">
+      <span class="eyebrow">The principle</span>
+      <h2 style="font-size:clamp(24px,2.6vw,34px);line-height:1.35">A hygiene chain is only as good as its weakest handover. Most failures happen between stages, not inside them — which is why our layout, not our intentions, keeps clean and soiled apart.</h2>
+    </div>
+  </div>
+</section>
+${ctaBand('Want the detail behind each stage?','We will walk your quality team through the full route, stage by stage.','Talk to Our Team',{href:'/process',label:'Our Process'})}
+`};
+
+/* Aliases so top-level service URLs resolve too */
+PAGES['/services/industrial'] = PAGES['/services/industrial-laundry'];
+
+/* ================================================================
+   FOOTER + NAVIGATION RENDER
+   ================================================================ */
+function renderFooter(){
+  const FOOT_LINKS = [
+    {path:'/',            label:'Home'},
+    {path:'/about',       label:'About Us'},
+    {path:'/why-us',      label:'Why Choose Us'},
+    {path:'/services',    label:'Our Services'},
+    {path:'/technology',  label:'Technology'},
+    {path:'/environment', label:'Environment'},
+    {path:'/hygiene',     label:'Hygiene Science'},
+    {path:'/industries',  label:'Industries'},
+    {path:'/process',     label:'Process'},
+    {path:'/gallery',     label:'Gallery'},
+    {path:'/faq',         label:'FAQ'},
+    {path:'/contact',     label:'Contact'}
+  ];
+  const links = FOOT_LINKS.map(n=>`<li><a href="#${n.path}">${n.label}</a></li>`).join('');
+  const svcs = SERVICES.slice(0,7).map(s=>`<li><a href="#/services/${s.slug}">${s.title}</a></li>`).join('');
+  const soc = [['linkedin','LinkedIn','<path d="M4.5 9.5v9M4.5 5.6h.01M9.5 18.5v-9M9.5 13.2c0-2 1.3-3.2 3-3.2s3 1.2 3 3.4v5.1"/>'],
+               ['instagram','Instagram','<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><path d="M16.9 7.1h.01"/>'],
+               ['facebook','Facebook','<path d="M14.5 8.5H17V5.2h-2.6c-2 0-3.4 1.4-3.4 3.4v1.7H8.5v3.3H11v8.4h3.5v-8.4H17l.5-3.3h-3v-1.3c0-.5.4-.8 1-.8Z"/>']]
+    .map(s=>{
+      const href = SITE.socialLinks[s[0]];
+      return `<a href="${href||'#'}" aria-label="${s[1]}"${href?' target="_blank" rel="noopener"':' aria-disabled="true" title="Profile not yet created"'}><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${s[2]}</svg></a>`;
+    }).join('');
+
+  document.getElementById('footer').innerHTML = `
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <div class="brand">
+          <div class="brand-mark">NW</div>
+          <div class="brand-txt"><span class="brand-name">NeatWear</span><span class="brand-sub">Solutions Pvt. Ltd.</span></div>
+        </div>
+        <p class="footabout">${SITE.positioning}</p>
+        <div class="social">${soc}</div>
+      </div>
+      <div><h4>Quick links</h4><ul>${links}</ul></div>
+      <div><h4>Services</h4><ul>${svcs}</ul></div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>${SITE.companyName.toUpperCase()}<br>${SITE.address.line1},<br>${SITE.address.line2},<br>${SITE.address.region}, ${SITE.address.country}</li>
+          <li>${[SITE.phone, SITE.phoneAlt].filter(Boolean).map(t=>`<a href="tel:${t.replace(/\s/g,'')}">${t}</a>`).join(' &nbsp;|&nbsp; ') || 'To be updated'}</li>
+          <li><a href="mailto:${SITE.email}">${SITE.email}</a></li>
+        </ul>
+        <a class="btn btn-teal" style="margin-top:18px" href="#/contact">Request a Quote</a>
+      </div>
+    </div>
+    <div class="footbar">
+      <span>© ${new Date().getFullYear()} ${SITE.companyName}. All rights reserved.</span>
+      <span>${SITE.promise}</span>
+    </div>
+  </div>`;
+}
+
+function renderNav(active){
+  const html = NAV.map(n=>`<li><a href="#${n.path}" class="${n.path===active?'active':''}">${n.label}</a></li>`).join('');
+  document.getElementById('navlinks').innerHTML = html;
+  document.getElementById('drawerlinks').innerHTML = html;
+}
+
+/* ================================================================
+   ROUTER
+   ================================================================ */
+function go(path){ location.hash = '#'+path; }
+
+function currentPath(){
+  const h = location.hash.replace(/^#/,'') || '/';
+  return h.startsWith('/') ? h : '/'+h;
+}
+
+function route(){
+  const path = currentPath();
+  const page = PAGES[path] || PAGES['/'];
+  document.title = page.title;
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.setAttribute('content', page.desc);
+
+  destroyScene();
+  document.getElementById('main').innerHTML = page.render();
+
+  // active nav: map service detail pages onto /services
+  let active = path;
+  if (path.startsWith('/services/')) active = '/services';
+  if (path === '/quality' || path === '/gallery' || path === '/faq' || path === '/thank-you') active = '';
+  renderNav(active);
+
+  closeDrawer();
+  window.scrollTo({top:0, behavior:'instant' in document.documentElement.style ? 'instant' : 'auto'});
+  initReveal();
+  initFlow();
+  initForm();
+  wireContactLinks();
+  if (path === '/') initScene();
+  updateNavSolid();
+}
+
+window.addEventListener('hashchange', route);
+
+/* ================================================================
+   UI BEHAVIOUR
+   ================================================================ */
+const navEl = document.getElementById('nav');
+function updateNavSolid(){
+  const onHome = currentPath() === '/';
+  const solid = !onHome || window.scrollY > 60;
+  navEl.classList.toggle('is-solid', solid);
+}
+window.addEventListener('scroll', updateNavSolid, {passive:true});
+
+const drawer = document.getElementById('drawer');
+const burger = document.getElementById('burger');
+function closeDrawer(){ drawer.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+burger.addEventListener('click', () => {
+  const open = drawer.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', String(open));
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+drawer.addEventListener('click', e => { if (e.target.tagName === 'A') closeDrawer(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape'){ closeDrawer(); closeLightbox(); } });
+
+function toggleFaq(btn){
+  const item = btn.parentElement;
+  const ans = item.querySelector('.ans');
+  const open = item.classList.toggle('open');
+  btn.setAttribute('aria-expanded', String(open));
+  ans.style.maxHeight = open ? ans.scrollHeight + 'px' : 0;
+}
+
+function filterGallery(btn){
+  const f = btn.dataset.f;
+  document.querySelectorAll('#galFilters button').forEach(b => b.classList.toggle('on', b === btn));
+  document.querySelectorAll('#masonry > div').forEach(d => {
+    d.style.display = (f === 'All' || d.dataset.c === f) ? '' : 'none';
+  });
+}
+
+const lb = document.getElementById('lightbox');
+function openLightbox(title, kicker){
+  document.getElementById('lbBox').innerHTML = ph(title, kicker);
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('lbClose').focus();
+}
+function closeLightbox(){ lb.classList.remove('open'); document.body.style.overflow=''; }
+document.getElementById('lbClose').addEventListener('click', closeLightbox);
+lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+
+/* Reveal on scroll */
+let revealObs;
+function initReveal(){
+  if (revealObs) revealObs.disconnect();
+  revealObs = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting){ en.target.classList.add('in'); revealObs.unobserve(en.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach((el,i) => {
+    el.style.transitionDelay = (i % 4) * 60 + 'ms';
+    revealObs.observe(el);
+  });
+}
+
+/* Process timeline progressive fill */
+let flowObs;
+function initFlow(){
+  if (flowObs) flowObs.disconnect();
+  const flows = document.querySelectorAll('.flow');
+  if (!flows.length) return;
+  flowObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) en.target.classList.add('on');
+    });
+    flows.forEach(flow => {
+      const steps = [...flow.querySelectorAll('.step')];
+      const done = steps.filter(s => s.classList.contains('on'));
+      const fill = flow.querySelector('.flow-fill');
+      if (fill && done.length){
+        const last = done[done.length-1];
+        fill.style.height = (last.offsetTop + last.offsetHeight/2 - 14) + 'px';
+      }
+    });
+  }, {threshold:.5, rootMargin:'0px 0px -20%'});
+  document.querySelectorAll('.step').forEach(s => flowObs.observe(s));
+}
+
+/* Contact links driven by config */
+function wireContactLinks(){
+  const wa = SITE.whatsapp ? 'https://wa.me/'+SITE.whatsapp : null;
+  const tel = SITE.phone ? 'tel:'+SITE.phone.replace(/\s/g,'') : null;
+  const set = (id, href, fallbackHash) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.setAttribute('href', href || fallbackHash);
+    if (!href) el.setAttribute('title','Contact details to be updated');
+  };
+  set('fabCall', tel, '#/contact');
+  set('fabWa', wa, '#/contact');
+  set('tyWhatsapp', wa, '#/contact');
+}
+
+/* ================================================================
+   LEAD CAPTURE
+   Front end only. Wire `submitEnquiry` to your API route.
+   Expected backend contract:  POST /api/enquiry  ->  { ok:true, leadId }
+   Server responsibilities: validate + sanitise, rate limit, CAPTCHA
+   verify, persist lead, notify company, confirm to customer, create
+   CRM record. Recipients come from environment variables, never here.
+   ================================================================ */
+const LEAD_STATUSES = ['New','Contacted','Qualified','Quotation Sent','Negotiation','Won','Lost'];
+
+async function submitEnquiry(payload){
+  // Replace this stub with the real call:
+  //   const res = await fetch('/api/enquiry', {
+  //     method:'POST',
+  //     headers:{'Content-Type':'application/json','X-CSRF-Token':csrfToken},
+  //     body: JSON.stringify(payload)
+  //   });
+  //   if (!res.ok) throw new Error('Request failed');
+  //   return res.json();
+  console.info('[NeatWear] Enquiry payload ready for POST /api/enquiry:', payload);
+  return new Promise(r => setTimeout(() => r({ok:true, leadId:'NW-'+Date.now().toString(36).toUpperCase()}), 700));
+}
+
+function initForm(){
+  const form = document.getElementById('quoteForm');
+  if (!form) return;
+
+  const validate = () => {
+    let ok = true;
+    form.querySelectorAll('[required]').forEach(el => {
+      const field = el.closest('.field');
+      let bad = !el.value.trim();
+      if (!bad && el.type === 'email') bad = !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value.trim());
+      if (!bad && el.type === 'tel')   bad = el.value.replace(/\D/g,'').length < 8;
+      field.classList.toggle('err', bad);
+      if (bad && ok){ el.focus(); ok = false; }
+    });
+    return ok;
+  };
+
+  form.querySelectorAll('input,select,textarea').forEach(el => {
+    el.addEventListener('input', () => el.closest('.field')?.classList.remove('err'));
+  });
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (form.website.value) return;              // honeypot tripped — drop silently
+    if (!validate()) return;
+
+    const btn = form.querySelector('button[type="submit"]');
+    const original = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending…';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    delete data.website;
+
+    const payload = {
+      ...data,
+      source: 'Website — Request a Quote',
+      page: currentPath(),
+      status: LEAD_STATUSES[0],
+      submittedAt: new Date().toISOString()
+    };
+
+    try {
+      await submitEnquiry(payload);
+      go('/thank-you');
+    } catch (err) {
+      btn.disabled = false;
+      btn.innerHTML = original;
+      let note = form.querySelector('.submit-error');
+      if (!note){
+        note = document.createElement('p');
+        note.className = 'submit-error';
+        note.style.cssText = 'color:#D64545;font-weight:600;font-size:14px;margin-top:14px';
+        form.appendChild(note);
+      }
+      note.textContent = 'We could not send that. Check your connection and try again, or email us directly.';
+    }
+  });
+}
+
+/* ================================================================
+   HERO 3D — industrial laundry line (Three.js r128)
+   Desktop only. Mobile falls back to the CSS gradient composition.
+   ================================================================ */
+let SCENE = null;
+const STAGES = ['Collection','Sorting','Washing','Rinsing','Drying','Finishing','Packaging','Lockup'];
+
+function destroyScene(){
+  if (!SCENE) return;
+  cancelAnimationFrame(SCENE.raf);
+  window.removeEventListener('resize', SCENE.onResize);
+  window.removeEventListener('mousemove', SCENE.onMove);
+  window.removeEventListener('scroll', SCENE.onScroll);
+  SCENE.renderer.dispose();
+  SCENE.scene.traverse(o => {
+    if (o.geometry) o.geometry.dispose();
+    if (o.material) Array.isArray(o.material) ? o.material.forEach(m=>m.dispose()) : o.material.dispose();
+  });
+  SCENE = null;
+}
+
+function initScene(){
+  const canvas = document.getElementById('scene');
+  if (!canvas || typeof THREE === 'undefined') return;
+  if (window.innerWidth < 641) return;                       // mobile → CSS fallback
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true, powerPreference:'high-performance'});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0x0B1F33, 24, 62);
+
+  const camera = new THREE.PerspectiveCamera(42, canvas.clientWidth / canvas.clientHeight, 0.1, 200);
+  camera.position.set(2, 4.2, 15);
+
+  /* --- Materials ------------------------------------------------ */
+  const steel   = new THREE.MeshStandardMaterial({color:0xC3D2DD, metalness:.92, roughness:.28});
+  const steelDk = new THREE.MeshStandardMaterial({color:0x7C93A6, metalness:.85, roughness:.42});
+  const navyMat = new THREE.MeshStandardMaterial({color:0x11314f, metalness:.35, roughness:.72});
+  const tealMat = new THREE.MeshStandardMaterial({color:0x16A6A0, emissive:0x0d6b67, emissiveIntensity:.85, roughness:.4, metalness:.2});
+  const glass   = new THREE.MeshStandardMaterial({color:0x0d2b46, metalness:.55, roughness:.12, transparent:true, opacity:.62});
+
+  /* --- Floor ---------------------------------------------------- */
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(120, 60), new THREE.MeshStandardMaterial({color:0x0a1a2b, roughness:.62, metalness:.32}));
+  floor.rotation.x = -Math.PI/2;
+  floor.position.y = -1.6;
+  scene.add(floor);
+
+  // floor guide lines — the direction of flow, always one way
+  for (let i = -2; i <= 2; i++){
+    const line = new THREE.Mesh(new THREE.BoxGeometry(70, .02, .05), new THREE.MeshStandardMaterial({color:0x1c4a6e, roughness:.9}));
+    line.position.set(0, -1.58, i * 4.2);
+    scene.add(line);
+  }
+
+  /* --- Conveyor ------------------------------------------------- */
+  const belt = new THREE.Mesh(new THREE.BoxGeometry(64, .34, 2.5), steelDk);
+  belt.position.y = -.2;
+  scene.add(belt);
+  const beltTop = new THREE.Mesh(new THREE.BoxGeometry(64, .06, 2.2), navyMat);
+  beltTop.position.y = 0;
+  scene.add(beltTop);
+
+  // conveyor legs
+  for (let x = -30; x <= 30; x += 5){
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(.16, 1.4, .16), steelDk);
+    leg.position.set(x, -1, .9);
+    scene.add(leg);
+    const leg2 = leg.clone(); leg2.position.z = -.9; scene.add(leg2);
+  }
+
+  /* --- Stations (washer drums) ---------------------------------- */
+  const drums = [];
+  const stationX = [-15, -5, 5, 15];
+  stationX.forEach((x, idx) => {
+    const g = new THREE.Group();
+
+    const body = new THREE.Mesh(new THREE.BoxGeometry(4.4, 4.4, 3.6), steel);
+    body.position.y = 1.4;
+    g.add(body);
+
+    const panel = new THREE.Mesh(new THREE.BoxGeometry(4.5, .5, .12), navyMat);
+    panel.position.set(0, 3.3, 1.84);
+    g.add(panel);
+
+    const ledStrip = new THREE.Mesh(new THREE.BoxGeometry(3.2, .1, .06), tealMat);
+    ledStrip.position.set(0, 3.3, 1.92);
+    g.add(ledStrip);
+
+    // porthole
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(1.28, .17, 12, 40), steelDk);
+    ring.position.set(0, 1.4, 1.82);
+    g.add(ring);
+    const win = new THREE.Mesh(new THREE.CircleGeometry(1.2, 40), glass);
+    win.position.set(0, 1.4, 1.83);
+    g.add(win);
+
+    // rotating inner drum, visible through the glass
+    const inner = new THREE.Mesh(new THREE.CylinderGeometry(1.05, 1.05, .5, 26, 1, true),
+      new THREE.MeshStandardMaterial({color:0x2f7fae, metalness:.7, roughness:.35, side:THREE.DoubleSide}));
+    inner.rotation.x = Math.PI/2;
+    inner.position.set(0, 1.4, 1.5);
+    g.add(inner);
+
+    // vent pipe up to the ceiling run
+    const pipe = new THREE.Mesh(new THREE.CylinderGeometry(.2, .2, 3.4, 12), steelDk);
+    pipe.position.set(1.4, 5.2, 0);
+    g.add(pipe);
+
+    g.position.x = x;
+    scene.add(g);
+    drums.push({inner, led: ledStrip, phase: idx});
+  });
+
+  // overhead service run
+  for (let i = 0; i < 3; i++){
+    const p = new THREE.Mesh(new THREE.CylinderGeometry(.14, .14, 68, 10), steelDk);
+    p.rotation.z = Math.PI/2;
+    p.position.set(0, 6.9 + i*.42, -1.2 + i*.5);
+    scene.add(p);
+  }
+
+  /* --- Garment bundles moving down the line --------------------- */
+  const SOILED = new THREE.Color(0x6f6552);
+  const CLEAN  = new THREE.Color(0xEAF3F8);
+  const bundles = [];
+  for (let i = 0; i < 22; i++){
+    const m = new THREE.MeshStandardMaterial({color:SOILED.clone(), roughness:.86, metalness:.04});
+    const b = new THREE.Mesh(new THREE.BoxGeometry(1.15, .58, 1.5), m);
+    b.position.set(-32 + i * 2.9, .38, (i % 2 ? .32 : -.32));
+    b.rotation.y = (i % 3) * .06;
+    scene.add(b);
+    bundles.push(b);
+  }
+
+  /* --- Lockup racking at the clean end -------------------------- */
+  const rack = new THREE.Group();
+  for (let s = 0; s < 3; s++){
+    const shelf = new THREE.Mesh(new THREE.BoxGeometry(9, .14, 2), steelDk);
+    shelf.position.set(0, s * 1.5, 0);
+    rack.add(shelf);
+    for (let k = 0; k < 6; k++){
+      const pack = new THREE.Mesh(new THREE.BoxGeometry(1.2, .8, 1.5),
+        new THREE.MeshStandardMaterial({color:0xDCE9F1, roughness:.8, metalness:.03}));
+      pack.position.set(-3.6 + k * 1.45, s * 1.5 + .47, 0);
+      rack.add(pack);
+    }
+  }
+  rack.position.set(25, .2, -6.5);
+  rack.rotation.y = -.34;
+  scene.add(rack);
+
+  /* --- Lighting ------------------------------------------------- */
+  scene.add(new THREE.AmbientLight(0x5f7f9c, .55));
+  const key = new THREE.DirectionalLight(0xE8F4FF, 1.15);
+  key.position.set(-8, 14, 12);
+  scene.add(key);
+  const rim = new THREE.DirectionalLight(0x1261A0, .95);
+  rim.position.set(14, 6, -12);
+  scene.add(rim);
+  const tealGlow = new THREE.PointLight(0x16A6A0, 1.5, 34);
+  tealGlow.position.set(4, 3.4, 5);
+  scene.add(tealGlow);
+  const blueGlow = new THREE.PointLight(0x1261A0, 1.2, 40);
+  blueGlow.position.set(-14, 4, 6);
+  scene.add(blueGlow);
+
+  /* --- Interaction ---------------------------------------------- */
+  let mx = 0, my = 0, tmx = 0, tmy = 0, scrollP = 0, tScroll = 0;
+  const onMove = e => {
+    tmx = (e.clientX / window.innerWidth - .5) * 2;
+    tmy = (e.clientY / window.innerHeight - .5) * 2;
+  };
+  const onScroll = () => {
+    const h = document.querySelector('.hero');
+    if (!h) return;
+    tScroll = Math.min(1, Math.max(0, window.scrollY / (h.offsetHeight * 1.15)));
+    const label = document.getElementById('stageName');
+    if (label){
+      const s = STAGES[Math.min(STAGES.length-1, Math.floor(tScroll * STAGES.length))];
+      if (label.textContent !== s) label.textContent = s;
+    }
+  };
+  const onResize = () => {
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (!w || !h) return;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h, false);
+  };
+  window.addEventListener('mousemove', onMove, {passive:true});
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onResize);
+
+  /* --- Loop ----------------------------------------------------- */
+  const clock = new THREE.Clock();
+  const tmp = new THREE.Color();
+
+  function frame(){
+    SCENE.raf = requestAnimationFrame(frame);
+    const dt = Math.min(clock.getDelta(), .05);
+    const t = clock.getElapsedTime();
+
+    if (!reduced){
+      // bundles travel left → right, turning clean as they clear the wash stations
+      bundles.forEach(b => {
+        b.position.x += dt * 3.2;
+        if (b.position.x > 32) b.position.x = -32;
+        const p = Math.min(1, Math.max(0, (b.position.x + 4) / 16));   // clean-up ramp
+        tmp.copy(SOILED).lerp(CLEAN, p);
+        b.material.color.copy(tmp);
+        b.position.y = .38 + Math.sin(t * 2.4 + b.position.x * .4) * .025;
+      });
+      drums.forEach((d, i) => {
+        d.inner.rotation.y += dt * (2.2 + i * .35);
+        d.led.material.emissiveIntensity = .55 + Math.sin(t * 1.8 + i) * .3;
+      });
+      tealGlow.intensity = 1.35 + Math.sin(t * 1.5) * .25;
+    }
+
+    // easing toward cursor + scroll targets
+    mx += (tmx - mx) * .045;
+    my += (tmy - my) * .045;
+    scrollP += (tScroll - scrollP) * .06;
+
+    camera.position.x = -6 + scrollP * 14 + mx * 2.2;
+    camera.position.y = 4.2 - scrollP * 1.1 - my * .9;
+    camera.position.z = 15 - scrollP * 3.2;
+    camera.lookAt(camera.position.x * .35 + 2, 1.5 - my * .4, -1);
+
+    renderer.render(scene, camera);
+  }
+
+  SCENE = {renderer, scene, camera, onResize, onMove, onScroll, raf:0};
+  onResize();
+  onScroll();
+  frame();
+}
+
+/* ================================================================
+   BOOT
+   ================================================================ */
+renderFooter();
+route();
+</script>
+</body>
+</html>
